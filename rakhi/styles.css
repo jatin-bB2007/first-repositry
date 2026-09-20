@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202c3d;
+    background: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 90%;
+    max-width: 1180px;
+    margin: auto;
+
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #173b68, #1bb7b1);
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 7px;
+}
+
+.logo h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+
+/* Menu */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #159fa7;
+}
+
+
+/* Top buttons */
+
+.top-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.top-buttons a {
+    color: white;
+    text-decoration: none;
+
+    padding: 9px 13px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.top-buttons a:nth-child(1) {
+    background: #b84969;
+}
+
+.top-buttons a:nth-child(2) {
+    background: #3677a7;
+}
+
+.top-buttons a:nth-child(3) {
+    background: #d47a43;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 90%;
+    max-width: 1180px;
+
+    margin: 35px auto 0;
+
+    min-height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* Hero text */
+
+.hero-text h1 {
+    font-size: 60px;
+    line-height: 0.95;
+
+    color: #1c2b3d;
+}
+
+.hero-text h1 span {
+    display: block;
+    color: #1da9aa;
+}
+
+.line {
+    width: 42px;
+    height: 3px;
+    background: #555;
+
+    margin: 30px 0;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.hero-text h2 b {
+    color: #23a9a8;
+}
+
+.hero-text h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.location {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.description {
+    width: 500px;
+    max-width: 100%;
+
+    color: #777;
+
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* Apply button */
+
+.apply-btn {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    background: linear-gradient(90deg, #173b68, #16b9bd);
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.apply-btn span {
+    margin-left: 15px;
+}
+
+
+/* Hero image */
+
+.hero-image {
+    height: 390px;
+
+    position: relative;
+
+    border-left: 4px solid #1cb5b5;
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.image-caption {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(12, 38, 61, 0.85);
+
+    color: white;
+
+    padding: 13px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   BLUE SECTION
+========================= */
+
+.blue-section {
+    margin-top: 35px;
+
+    background: #082d50;
+
+    color: white;
+}
+
+
+/* Top image-like strip */
+
+.campus-strip {
+    height: 150px;
+
+    background:
+        linear-gradient(rgba(13, 89, 126, 0.65),
+        rgba(13, 89, 126, 0.65)),
+        repeating-linear-gradient(
+            135deg,
+            #12537a 0px,
+            #12537a 2px,
+            #26718e 3px,
+            #26718e 60px
+        );
+}
+
+.strip-content {
+    width: 90%;
+    max-width: 850px;
+
+    margin: auto;
+
+    padding-top: 42px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+.small-icon {
+    font-size: 22px;
+}
+
+.strip-content h3 {
+    font-size: 19px;
+    line-height: 1.4;
+    max-width: 450px;
+}
+
+
+/* Specialization */
+
+.specializations {
+    width: 90%;
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 45px 0 35px;
+}
+
+.heading-small {
+    text-align: center;
+
+    color: #4de0d5;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 28px;
+}
+
+
+/* Grid */
+
+.specialization-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+.specialization {
+    min-height: 105px;
+
+    border-right: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 12px;
+}
+
+.specialization:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.icon {
+    color: #4de0d5;
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+.specialization p {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+
+/* Bottom area */
+
+.blue-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 35px;
+}
+
+.blue-bottom .apply-btn {
+    margin-top: 0;
+}
+
+.features {
+    display: flex;
+    gap: 35px;
+}
+
+.features div {
+    font-size: 11px;
+}
+
+.features span {
+    color: #4de0d5;
+    margin-right: 7px;
+}
+
+
+/* =========================
+   ADMISSION SECTION
+========================= */
+
+.admission {
+    padding: 80px 20px;
+
+    background: #f7f9f9;
+}
+
+.admission-content {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.admission h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.admission-content > p:not(.heading-small) {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+.program-boxes {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin: 35px 0;
+}
+
+.program-boxes div {
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid #e5e5e5;
+}
+
+.program-boxes h3 {
+    color: #173b68;
+
+    margin-bottom: 10px;
+}
+
+.program-boxes strong {
+    color: #18a7a8;
+
+    font-size: 25px;
+}
+
+.program-boxes p {
+    color: #777;
+
+    font-size: 13px;
+}
+
+.dark-btn {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    background: #173b68;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #09263f;
+
+    color: white;
+}
+
+.footer-top {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 0;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-top h4 {
+    margin-bottom: 15px;
+}
+
+.footer-top a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #c9d3db;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.footer-top p {
+    color: #c9d3db;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    text-align: center;
+
+    padding: 18px;
+
+    color: #9aaab6;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: auto;
+        padding: 18px 0;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .top-buttons {
+        display: none;
+    }
+
+
+    .hero {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        margin-top: 35px;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+
+    .specialization-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .specialization {
+        min-height: 100px;
+    }
+
+    .blue-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+    .features {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+
+    .program-boxes {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+}
+ 
