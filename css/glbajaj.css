@@ -461,7 +461,7 @@ select:focus {
 /* CTA */
 
 .cta {
-    background: var(--primary);
+    background: linear-gradient(105deg, var(--dark) 0%, #8e3542 52%, var(--primary) 100%);
     color: white;
     padding: 55px 0;
 }
