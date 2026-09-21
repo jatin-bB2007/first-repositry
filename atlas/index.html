@@ -27,11 +27,11 @@
       <a href="../iibs/iibs-admissions-mba-pgdm.html">IIBS</a>
       <a href="../mba-addmission/index.html">MBA Admissions</a>
     </nav>
-    <a class="campus-header-action" href="tel:+919999999999">Talk to a counsellor &rarr;</a>
+    <a class="campus-header-action" href="#enquiry-form">Talk to a counsellor &rarr;</a>
   </div>
 </header>
 
-<section class="hero campus-banner">
+<section class="hero campus-banner" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1 class="headline">Applications<span class="accent">Open</span></h1>
@@ -44,7 +44,7 @@
       </div>
       <p class="description">A future-ready MBA designed to empower you with the skills, insights, and experience to lead in a dynamic world.</p>
       <div class="hero-cta">
-        <a class="apply-btn" href="#apply">
+        <a class="apply-btn" href="#enquiry-form">
           Apply Now
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -60,88 +60,177 @@
   </div>
 </section>
 
-<div class="photo-band">
+<div class="photo-band" aria-label="ATLAS Mumbai campus">
   <img src="https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Modern glass office building facade">
   <div class="photo-band-text">
     <p>Industry-facing classrooms in the heart of Mumbai's business district.</p>
   </div>
 </div>
 
-<section class="specializations">
-  <div class="wrap">
-    <div class="spec-title">SPECIALIZATIONS</div>
+<section class="content-section overview" id="overview">
+  <div class="wrap two-column">
+    <div><h2>Learn business by building it.</h2></div>
+    <div class="section-copy"><p>ATLAS SkillTech University brings together rigorous management education and hands-on industry learning. The MBA is designed for ambitious graduates who want to create value from their first day at work.</p><p>From live briefs and simulations to mentorship and internships, every part of the experience connects classroom learning with the real business world.</p><a class="text-link" href="#why-atlas">Start your application <span>&rarr;</span></a></div>
+  </div>
+</section>
 
-    <div class="spec-row">
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M8 34V28M18 34V22M28 34V16M38 34V10"/><path d="M30 12l8-2v8"/></svg>
-        <span>Finance</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M6 20v8l10 3V17z"/><path d="M16 20l20-9v26l-20-9"/><path d="M12 31v6a3 3 0 0 0 6 0v-4"/></svg>
-        <span>Marketing</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M24 6a12 12 0 0 0-7 22c1.5 1.1 2 2.4 2 4v2h10v-2c0-1.6.5-2.9 2-4a12 12 0 0 0-7-22z"/><path d="M20 40h8M21 44h6"/></svg>
-        <span>Entrepreneurship</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><rect x="6" y="10" width="30" height="20" rx="1.5"/><path d="M15 36h12M21 30v6"/><circle cx="36" cy="24" r="7"/><path d="M41 29l4 4"/></svg>
-        <span>Business Analytics</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><rect x="16" y="16" width="16" height="16" rx="2"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M11 37l4-4M33 15l4-4"/></svg>
-        <span>Fintech</span>
-      </div>
+<section class="content-section benefits" id="why-atlas">
+  <div class="wrap"><div class="section-heading"><h2>More than a degree. A launchpad.</h2></div>
+    <div class="card-grid three-up">
+      <article class="info-card"><span class="card-number">01</span><h3>Practice-led learning</h3><p>Apply concepts through case studies, simulations, projects and business challenges.</p></article>
+      <article class="info-card"><span class="card-number">02</span><h3>Mumbai advantage</h3><p>Learn in India&rsquo;s commercial capital, close to leading companies and opportunities.</p></article>
+      <article class="info-card"><span class="card-number">03</span><h3>Future-ready skills</h3><p>Build communication, analytical and leadership capabilities for a changing workplace.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="content-section enquiry-form-section" id="enquiry-form">
+  <div class="wrap">
+    <div class="section-heading">
+      <h2>Apply for ATLAS MBA admissions.</h2>
     </div>
 
+    <form class="enquiry-form" action="#" method="post">
+      <div class="field-row">
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter your mobile number" required>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-field">
+          <label for="course">Course Interest</label>
+          <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option>MBA</option>
+            <option>PGDM</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+            <option>Analytics</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Tell us about your goals</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your query or career goals here..."></textarea>
+      </div>
+
+      <button type="submit" class="apply-btn form-submit-btn">Submit Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<section class="specializations" id="specializations">
+  <div class="wrap">
+    <div class="spec-title">SPECIALIZATIONS</div>
     <div class="spec-row">
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M6 18l18-10 18 10"/><rect x="9" y="18" width="30" height="4"/><path d="M12 22v14M20 22v14M28 22v14M36 22v14"/><path d="M6 40h36"/></svg>
-        <span>Investment Banking</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M24 6v18l14 8"/><circle cx="24" cy="24" r="18"/></svg>
-        <span>Financial Planning &amp; Applied Finance</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="16" r="5"/><path d="M6 40v-3a11 11 0 0 1 22 0v3"/><path d="M30 26a9 9 0 0 1 12 8v6"/></svg>
-        <span>Human Capital Management</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="24" cy="24" r="6"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M9 9l4 4M35 35l4 4M9 39l4-4M35 13l4-4"/></svg>
-        <span>Operations Management</span>
-      </div>
-      <div class="spec-item">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><rect x="6" y="10" width="30" height="20" rx="1.5"/><path d="M15 36h12"/><path d="M12 24l6-6 5 5 9-9"/><circle cx="38" cy="30" r="5"/></svg>
-        <span>Digital Marketing &amp; Advertising</span>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M8 34V28M18 34V22M28 34V16M38 34V10"/><path d="M30 12l8-2v8"/></svg><span>Finance</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M6 20v8l10 3V17z"/><path d="M16 20l20-9v26l-20-9"/><path d="M12 31v6a3 3 0 0 0 6 0v-4"/></svg><span>Marketing</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M24 6a12 12 0 0 0-7 22c1.5 1.1 2 2.4 2 4v2h10v-2c0-1.6.5-2.9 2-4a12 12 0 0 0-7-22z"/><path d="M20 40h8M21 44h6"/></svg><span>Entrepreneurship</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><rect x="6" y="10" width="30" height="20" rx="1.5"/><path d="M15 36h12M21 30v6"/><circle cx="36" cy="24" r="7"/><path d="M41 29l4 4"/></svg><span>Business Analytics</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><rect x="16" y="16" width="16" height="16" rx="2"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M11 37l4-4M33 15l4-4"/></svg><span>Fintech</span></div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M6 18l18-10 18 10"/><rect x="9" y="18" width="30" height="4"/><path d="M12 22v14M20 22v14M28 22v14M36 22v14"/><path d="M6 40h36"/></svg><span>Investment Banking</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><path d="M24 6v18l14 8"/><circle cx="24" cy="24" r="18"/></svg><span>Financial Planning &amp; Applied Finance</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="16" r="5"/><path d="M6 40v-3a11 11 0 0 1 22 0v3"/><path d="M30 26a9 9 0 0 1 12 8v6"/></svg><span>Human Capital Management</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="24" cy="24" r="6"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M9 9l4 4M35 35l4 4M9 39l4-4M35 13l4-4"/></svg><span>Operations Management</span></div>
+      <div class="spec-item"><svg viewBox="0 0 48 48" fill="none" stroke="#5EE6D6" stroke-width="2"><rect x="6" y="10" width="30" height="20" rx="1.5"/><path d="M15 36h12"/><path d="M12 24l6-6 5 5 9-9"/><circle cx="38" cy="30" r="5"/></svg><span>Digital Marketing &amp; Advertising</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section curriculum" id="curriculum">
+  <div class="wrap"><div class="section-heading"><h2>A curriculum made for momentum.</h2></div><div class="timeline-grid"><article><span>Term 1</span><h3>Business foundations</h3><p>Master the core language of management, markets and organisations.</p></article><article><span>Term 2</span><h3>Functional depth</h3><p>Explore finance, marketing, operations and data-driven decisions.</p></article><article><span>Term 3</span><h3>Specialise &amp; apply</h3><p>Choose your pathway and solve meaningful business problems.</p></article><article><span>Term 4</span><h3>Lead forward</h3><p>Bring your learning together through capstones and career preparation.</p></article></div></div>
+</section>
+
+<section class="content-section dark-section exposure" id="exposure">
+  <div class="wrap two-column"><div><h2>Your network starts in the classroom.</h2></div><div class="section-copy"><p>Engage with practitioners, founders and business leaders through guest sessions, live projects and immersive experiences.</p><ul class="check-list"><li>Live projects and industry challenges</li><li>Masterclasses with business leaders</li><li>Career mentoring and professional workshops</li><li>Collaborative, peer-led learning</li></ul></div></div>
+</section>
+
+<section class="content-section outcomes" id="outcomes">
+  <div class="wrap"><div class="section-heading"><h2>Shape a career with direction.</h2></div><div class="outcome-grid"><div><strong>Career coaching</strong><span>Clarify your strengths and professional story.</span></div><div><strong>Placement readiness</strong><span>Prepare for interviews, group discussions and recruitment.</span></div><div><strong>Alumni community</strong><span>Stay connected to a growing network of professionals.</span></div></div></div>
+</section>
+
+<section class="content-section eligibility" id="eligibility">
+  <div class="wrap two-column"><div><h2>Ready to take the next step?</h2><p class="section-intro">We welcome motivated graduates from diverse academic backgrounds.</p></div><div class="eligibility-panel"><div><span>01</span><p>A recognised bachelor&rsquo;s degree or equivalent qualification.</p></div><div><span>02</span><p>Academic records, entrance-test scores and profile details as applicable.</p></div><div><span>03</span><p>Selection through the university&rsquo;s admissions process.</p></div><a class="text-link" href="#apply">Check your eligibility <span>&rarr;</span></a></div></div>
+</section>
+
+<section class="content-section process" id="process">
+  <div class="wrap"><div class="section-heading"><h2>Four simple steps to get started.</h2></div><ol class="process-grid"><li><span>01</span><h3>Apply online</h3><p>Submit your application and supporting details.</p></li><li><span>02</span><h3>Profile review</h3><p>The admissions team reviews your application.</p></li><li><span>03</span><h3>Interaction</h3><p>Share your goals through the selection process.</p></li><li><span>04</span><h3>Confirm your seat</h3><p>Complete the next steps after receiving an offer.</p></li></ol></div>
+</section>
+
+<section class="content-section course-showcase" id="courses">
+  <div class="wrap"><div class="section-heading"><h2>Designed for careers in business, strategy and growth.</h2></div><div class="course-grid"><article class="course-card"><span class="course-tag">Core</span><h3>Financial Management</h3><p>Understand corporate finance, valuation, risk and strategic investment decisions.</p></article><article class="course-card"><span class="course-tag">Core</span><h3>Marketing Strategy</h3><p>Build brand thinking, consumer insight and market positioning for modern businesses.</p></article><article class="course-card"><span class="course-tag">Core</span><h3>Operations &amp; Supply Chain</h3><p>Learn to improve efficiency, manage performance and drive sustainable operations.</p></article><article class="course-card"><span class="course-tag">Elective</span><h3>Business Analytics</h3><p>Use data to make sharper decisions, forecast outcomes and uncover opportunities.</p></article></div></div>
+</section>
+
+<section class="content-section faq-section" id="faqs">
+  <div class="wrap two-column"><div><h2>Questions, answered.</h2><p class="section-intro">For personalised guidance on admissions, connect with our counsellors.</p></div><div class="faq-list"><details open><summary>When do MBA applications open?</summary><p>Applications for the 2027&ndash;29 MBA batch are open now. Apply early to begin your admissions journey.</p></details><details><summary>Can students from any academic background apply?</summary><p>Yes. Candidates from varied undergraduate disciplines may apply, subject to the university&rsquo;s eligibility and selection requirements.</p></details><details><summary>How can I get application support?</summary><p>Use the application enquiry below and a counsellor can guide you through the next steps.</p></details></div></div>
+</section>
+
+<section class="content-section fees-section" id="fees">
+  <div class="wrap">
+    <div class="section-heading"><h2>Transparent planning for your MBA.</h2></div>
+    <div class="fees-grid">
+      <div class="fee-box"><h3>Tuition Fees</h3><p>Competitive programme fees with flexible support and a clear cost structure.</p></div>
+      <div class="fee-box"><h3>Scholarships</h3><p>Merit-based and performance-linked scholarships for deserving candidates.</p></div>
+      <div class="fee-box"><h3>Installments</h3><p>Easy payment options designed to reduce financial pressure during the intake period.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section placements" id="placements">
+  <div class="wrap">
+    <div class="section-heading"><h2>Career support built for real outcomes.</h2></div>
+    <div class="placement-grid">
+      <div class="placement-card"><strong>Career Coaching</strong><span>Resume building, interview preparation and placement readiness.</span></div>
+      <div class="placement-card"><strong>Industry Connect</strong><span>Access to recruiter interactions, alumni and live business conversations.</span></div>
+      <div class="placement-card"><strong>Growth Path</strong><span>Support for consulting, marketing, finance and leadership-driven roles.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section student-life" id="student-life">
+  <div class="wrap two-column">
+    <div><h2>Where ambition meets opportunity.</h2></div>
+    <div class="section-copy"><p>ATLAS brings together students who are curious, driven and ready to build careers with confidence. The experience combines peer learning, leadership activities and a vibrant student ecosystem.</p>
+      <div class="mini-stats">
+        <div><strong>30+</strong><span>Industry events</span></div>
+        <div><strong>7+</strong><span>Live projects</span></div>
+        <div><strong>1:1</strong><span>Mentoring</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-strip" id="apply">
-  <div class="cta-strip-bg">
-    <img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?fm=jpg&q=70&w=1400&auto=format&fit=crop" alt="">
-  </div>
-  <div class="wrap cta-strip-inner">
-    <a class="apply-btn small" href="#">
-      Apply Now
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
-    <div class="features">
-      <div class="feature">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-        Global Exposure
-      </div>
-      <div class="feature">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M12 7.5v4M12 11.5L6.5 16M12 11.5L17.5 16"/></svg>
-        Industry Connections
-      </div>
-      <div class="feature">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
-        Leadership Development
-      </div>
+<section class="content-section contact-section" id="contact">
+  <div class="wrap two-column">
+    <div><h2>Speak with our counsellor today.</h2><p class="section-intro">Get advice on the MBA, fees, eligibility, and the admission process before you apply.</p></div>
+    <div class="contact-box">
+      <div><span>Email</span><p>admissions@atlasuniversity.in</p></div>
+      <div><span>Phone</span><p>+91 99999 99999</p></div>
+      <div><span>Campus</span><p>ATLAS SkillTech University, Mumbai</p></div>
+      <a class="text-link" href="#apply">Book a counselling call <span>&rarr;</span></a>
     </div>
+  </div>
+</section>
+
+<section class="cta-strip" id="apply">
+  <div class="cta-strip-bg"><img src="https://images.unsplash.com/photo-1758873268745-dd2cf0d677b5?fm=jpg&q=70&w=1400&auto=format&fit=crop" alt=""></div>
+  <div class="wrap cta-strip-inner">
+      <div class="cta-copy"><h2>Build your future at ATLAS.</h2></div>
+    <a class="apply-btn small" href="#enquiry-form">Apply Now<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="features"><div class="feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Global Exposure</div><div class="feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M12 7.5v4M12 11.5L6.5 16M12 11.5L17.5 16"/></svg>Industry Connections</div><div class="feature"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EE6D6" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>Leadership Development</div></div>
   </div>
 </section>
 
