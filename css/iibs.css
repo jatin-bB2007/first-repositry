@@ -137,9 +137,9 @@ nav a:hover {
 /* Hero text */
 
 .hero-text h1 {
-    font-size: 60px;
+    font-size: clamp(38px, 5vw, 58px);
     line-height: 0.95;
-
+    letter-spacing: -0.04em;
     color: #1c2b3d;
 }
 
@@ -157,7 +157,7 @@ nav a:hover {
 }
 
 .hero-text h2 {
-    font-size: 22px;
+    font-size: clamp(20px, 2vw, 28px);
     margin-bottom: 18px;
 }
 
@@ -166,8 +166,8 @@ nav a:hover {
 }
 
 .hero-text h3 {
-    font-size: 18px;
-    font-weight: normal;
+    font-size: clamp(16px, 1.6vw, 20px);
+    font-weight: 500;
     margin-bottom: 18px;
 }
 
@@ -180,10 +180,10 @@ nav a:hover {
     width: 500px;
     max-width: 100%;
 
-    color: #777;
+    color: #5d6978;
 
-    line-height: 1.6;
-    font-size: 14px;
+    line-height: 1.7;
+    font-size: 15px;
 }
 
 
@@ -367,14 +367,15 @@ nav a:hover {
 .icon {
     color: #4de0d5;
 
-    font-size: 27px;
+    font-size: 34px;
 
     margin-bottom: 10px;
 }
 
 .specialization p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.4;
+    font-weight: 600;
 }
 
 
@@ -400,7 +401,8 @@ nav a:hover {
 }
 
 .features div {
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .features span {
@@ -429,7 +431,7 @@ nav a:hover {
 
 .admission h2 {
     font-size: 38px;
-
+    color: #003153;
     margin-bottom: 15px;
 }
 
@@ -438,9 +440,10 @@ nav a:hover {
 
     margin: auto;
 
-    color: #666;
+    color: #4d5d6d;
 
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 16px;
 }
 
 
@@ -455,27 +458,32 @@ nav a:hover {
 }
 
 .program-boxes div {
-    background: white;
+    background: linear-gradient(180deg, #ffffff 0%, #f3f8fd 100%);
 
     padding: 25px;
 
-    border: 1px solid #e5e5e5;
+    border: 1px solid #dfeaf5;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 49, 83, 0.06);
 }
 
 .program-boxes h3 {
-    color: #173b68;
+    color: #003153;
 
     margin-bottom: 10px;
+    font-size: 22px;
 }
 
 .program-boxes strong {
-    color: #18a7a8;
+    color: #003153;
 
-    font-size: 25px;
+    font-size: 26px;
+    display: inline-block;
+    margin-bottom: 8px;
 }
 
 .program-boxes p {
-    color: #777;
+    color: #5b6f83;
 
     font-size: 13px;
 }
@@ -485,12 +493,304 @@ nav a:hover {
 
     padding: 13px 22px;
 
-    background: #173b68;
+    background: #003153;
 
     color: white;
 
     text-decoration: none;
 
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   ADDITIONAL SECTIONS
+========================= */
+
+.container-narrow {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.why-iibs,
+.program-overview,
+.process-section,
+.eligibility-section,
+.placements-section,
+.campus-life,
+.faq-section {
+    padding: 90px 0;
+    background: #f7f9fb;
+}
+
+.why-iibs h2,
+.program-overview h2,
+.process-section h2,
+.eligibility-section h2,
+.placements-section h2,
+.campus-life h2,
+.faq-section h2 {
+    text-align: center;
+    font-size: clamp(30px, 4vw, 46px);
+    color: #002244;
+    margin-bottom: 30px;
+}
+
+.why-iibs .heading-small,
+.program-overview .heading-small,
+.process-section .heading-small,
+.eligibility-section .heading-small,
+.placements-section .heading-small,
+.campus-life .heading-small,
+.faq-section .heading-small {
+    margin-bottom: 16px;
+}
+
+.why-iibs .heading-small.alt,
+.program-overview .heading-small.alt,
+.process-section .heading-small.alt,
+.eligibility-section .heading-small.alt,
+.placements-section .heading-small.alt,
+.campus-life .heading-small.alt,
+.faq-section .heading-small.alt {
+    color: #1aa8a8;
+}
+
+.feature-grid,
+.overview-grid,
+.campus-grid,
+.placement-grid {
+    display: grid;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.feature-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.overview-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.campus-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.placement-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.feature-card,
+.overview-card,
+.campus-card,
+.placement-item,
+.info-panel {
+    background: white;
+    border: 1px solid #e8edf2;
+    border-radius: 18px;
+    padding: 28px 22px;
+    box-shadow: 0 10px 30px rgba(12, 35, 58, 0.04);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #e7f9fa, #dfeeff);
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.feature-card h3,
+.overview-card h3,
+.campus-card h3 {
+    color: #002244;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feature-card p,
+.overview-card p,
+.campus-card p,
+.info-panel p,
+.info-panel li {
+    color: #4d5d6d;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.overview-card,
+.campus-card {
+    min-height: 220px;
+}
+
+.split-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.info-panel h3 {
+    color: #162b43;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.info-panel ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-panel li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.info-panel li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #1aa8a8;
+    font-weight: 700;
+}
+
+.info-panel.highlighted {
+    background: linear-gradient(135deg, #0d355d, #153f6d 45%, #1ca4a7);
+    color: white;
+    border: none;
+}
+
+.info-panel.highlighted h3,
+.info-panel.highlighted p {
+    color: white;
+}
+
+.small-btn {
+    margin-top: 18px;
+    padding: 12px 18px;
+    font-size: 13px;
+}
+
+.placement-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.placement-item strong {
+    display: block;
+    color: #152b43;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.placement-item span {
+    color: #607084;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.stats-band {
+    background: linear-gradient(135deg, #0d355d, #123d6a 35%, #15a7aa);
+    padding: 28px 0;
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: center;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 12px 16px;
+}
+
+.stat-box strong {
+    display: block;
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 8px;
+}
+
+.stat-box span {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.process-item {
+    background: white;
+    border: 1px solid #e7edf4;
+    border-radius: 18px;
+    padding: 24px 20px;
+}
+
+.step-number {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #eaf7f8;
+    color: #0f9fa2;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.process-item h3 {
+    font-size: 20px;
+    color: #162b43;
+    margin-bottom: 10px;
+}
+
+.process-item p {
+    color: #607084;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.faq-list {
+    display: grid;
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid #e7edf4;
+    border-radius: 16px;
+    padding: 24px 22px;
+}
+
+.faq-item h3 {
+    color: #162b43;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #617084;
+    line-height: 1.7;
     font-size: 14px;
 }
 
@@ -638,6 +938,18 @@ footer {
         gap: 15px;
     }
 
+    .feature-grid,
+    .overview-grid,
+    .campus-grid,
+    .placement-grid,
+    .process-grid,
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .split-layout {
+        grid-template-columns: 1fr;
+    }
 
     .program-boxes {
         grid-template-columns: 1fr;
@@ -648,6 +960,17 @@ footer {
         grid-template-columns: 1fr;
 
         gap: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .feature-grid,
+    .overview-grid,
+    .campus-grid,
+    .placement-grid,
+    .process-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
     }
 }
  
