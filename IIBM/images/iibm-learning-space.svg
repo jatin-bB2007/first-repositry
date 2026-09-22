@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">IIBM learning environment</title>
+  <desc id="desc">A modern management classroom with students collaborating.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bde9ee"/><stop offset="1" stop-color="#d9f1e9"/></linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9f4e9"/><stop offset="1" stop-color="#dce7e9"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#657c91"/><stop offset="1" stop-color="#31495f"/></linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <rect x="65" y="78" width="1070" height="568" rx="18" fill="url(#wall)"/>
+  <rect x="106" y="120" width="545" height="295" rx="10" fill="#3a6274"/>
+  <rect x="124" y="138" width="509" height="259" rx="4" fill="#8bd3dc"/>
+  <path d="M124 305h509v92H124z" fill="#6aa7b7" opacity=".75"/>
+  <path d="M124 194h509M251 138v259M378 138v259M505 138v259" stroke="#d7f4f4" stroke-width="9" opacity=".7"/>
+  <rect x="710" y="134" width="335" height="207" rx="12" fill="#0b2948"/>
+  <rect x="730" y="154" width="295" height="167" rx="4" fill="#13a8a0"/>
+  <path d="M760 280l70-67 52 42 63-70 50 95z" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="710" y="375" width="310" height="26" rx="13" fill="#c69052"/><rect x="742" y="399" width="22" height="151" fill="#a87543"/><rect x="966" y="399" width="22" height="151" fill="#a87543"/>
+  <path d="M0 602h1200v298H0z" fill="url(#floor)"/>
+  <path d="M90 900l304-298h164L430 900M702 900l126-298h162l120 298" fill="#2b4055" opacity=".42"/>
+  <ellipse cx="578" cy="654" rx="270" ry="84" fill="#d8b37a"/><ellipse cx="578" cy="641" rx="270" ry="84" fill="#f2d5a0"/>
+  <g fill="#102b4c">
+    <circle cx="390" cy="515" r="43"/><path d="M323 624c0-78 35-120 67-120s67 42 67 120z"/>
+    <circle cx="558" cy="494" r="45"/><path d="M486 624c0-84 37-128 72-128s72 44 72 128z"/>
+    <circle cx="745" cy="519" r="42"/><path d="M680 624c0-77 33-118 65-118s65 41 65 118z"/>
+  </g>
+  <g fill="#16aaa3"><circle cx="390" cy="507" r="31"/><circle cx="558" cy="486" r="33"/><circle cx="745" cy="511" r="30"/></g>
+  <g fill="#fff" opacity=".96"><rect x="456" y="598" width="238" height="13" rx="6"/><rect x="500" y="622" width="150" height="10" rx="5"/></g>
+  <text x="115" y="735" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="4">IIBM LEARNING EXPERIENCE</text>
+  <text x="115" y="782" fill="#d7f4f4" font-family="Arial, sans-serif" font-size="24">Collaborate. Learn. Lead.</text>
+</svg>
