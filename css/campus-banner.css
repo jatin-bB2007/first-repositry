@@ -202,6 +202,86 @@
 	color: #fff;
 }
 
+.campus-banner.mba-banner {
+	padding: 14px 0 18px;
+}
+
+.campus-banner.mba-banner .hero-grid {
+	gap: 44px;
+	padding-top: 14px;
+	padding-bottom: 18px;
+}
+
+.campus-banner.mba-banner .hero-copy h1 {
+	font-size: clamp(38px, 4.2vw, 64px);
+	font-weight: 900;
+	line-height: 1.08;
+	letter-spacing: -.035em;
+}
+
+.campus-banner.mba-banner .hero-copy p {
+	font-size: 15px;
+	line-height: 1.55;
+}
+
+.campus-banner.mba-banner .cta-row {
+	margin-top: 22px;
+}
+
+.campus-banner.mba-banner .hero-points {
+	margin-top: 22px;
+	gap: 7px;
+	font-size: 14px;
+	line-height: 1.35;
+}
+
+.campus-banner.mba-banner .hero-card {
+	padding: 18px 20px 16px;
+	border-radius: 22px;
+}
+
+.campus-banner.mba-banner .card-head {
+	margin-bottom: 12px;
+}
+
+.campus-banner.mba-banner .badge {
+	padding: 7px 11px;
+	font-size: .75rem;
+}
+
+.campus-banner.mba-banner .card-head h2 {
+	margin-top: 10px;
+	font-size: clamp(1.25rem, 1.7vw, 1.65rem);
+	line-height: 1.15;
+}
+
+.campus-banner.mba-banner .enquiry-form {
+	gap: 11px;
+}
+
+.campus-banner.mba-banner .enquiry-form label {
+	gap: 6px;
+	font-size: .84rem;
+}
+
+.campus-banner.mba-banner .enquiry-form input,
+.campus-banner.mba-banner .enquiry-form select {
+	min-height: 48px;
+	padding: 11px 14px;
+	border-radius: 11px;
+}
+
+.campus-banner.mba-banner .form-message {
+	min-height: 14px;
+	font-size: .78rem;
+}
+
+.campus-banner.mba-banner .enquiry-form .btn {
+	min-height: 50px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 .campus-banner .hero-image,
 .campus-banner .hero-photo-frame {
 	border-color: var(--banner-teal);
