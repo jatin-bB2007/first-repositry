@@ -18,6 +18,9 @@
   <style>
     .hero { background: linear-gradient(90deg, rgba(5,25,54,.98), rgba(7,36,70,.9) 53%, rgba(26,123,129,.6)), url('https://www.itsengg.edu.in/public/upload/gell/1758178066.jpg') center/cover !important; }
     .campus-header { background: linear-gradient(100deg, rgba(8,26,52,.98), rgba(14,44,84,.94) 48%, rgba(20,166,160,.58)), url('https://www.itsengg.edu.in/public/upload/gell/1758186359.jpg') center/cover !important; }
+    .fees-panel, .hostel-fees, .fee-combo:not(.mba-combo), .official-courses, .mba-combo { display: none !important; }
+    .courses { grid-template-columns: repeat(2, minmax(280px, 370px)); justify-content: center; }
+    @media (max-width: 760px) { .courses { grid-template-columns: minmax(0, 1fr); } }
   </style>
 </head>
 
@@ -168,29 +171,19 @@
   </section>
   <section class="pale" id="programmes">
     <div class="wrap">
-      <header class="center"><small>ENGINEERING PROGRAMMES</small>
+      <header class="center"><small>MANAGEMENT PROGRAMMES</small>
         <h2>Choose a path that powers your ambition.</h2>
-        <p>ITS Greater Noida offers undergraduate engineering pathways built around practical learning, emerging
-          technology and career readiness.</p>
+        <p>Explore management programmes built around practical learning, industry exposure and career readiness.</p>
       </header>
       <div class="courses">
-        <article><i>&lt;/&gt;</i>
-          <h3>Computer Science<br>&amp; Engineering</h3>
-          <p>Build strong foundations in software, data and computing systems.</p><a href="#enquiry">Explore programme
+        <article><i>MBA</i>
+          <h3>Master of Business<br>Administration</h3>
+          <p>Build leadership, business and management skills for a successful career.</p><a href="#enquiry">Explore programme
             &rarr;</a>
         </article>
-        <article><i>AI</i>
-          <h3>Artificial Intelligence<br>&amp; Machine Learning</h3>
-          <p>Learn to create intelligent solutions for a changing digital world.</p><a href="#enquiry">Explore programme
-            &rarr;</a>
-        </article>
-        <article><i>EC</i>
-          <h3>Electronics &amp;<br>Communication</h3>
-          <p>Explore electronics, networks and embedded technologies.</p><a href="#enquiry">Explore programme &rarr;</a>
-        </article>
-        <article><i>ME</i>
-          <h3>Mechanical<br>Engineering</h3>
-          <p>Turn ideas into real-world systems through design and engineering.</p><a href="#enquiry">Explore programme
+        <article><i>PGDM</i>
+          <h3>Post Graduate Diploma<br>in Management</h3>
+          <p>Develop practical business expertise and industry-ready management skills.</p><a href="#enquiry">Explore programme
             &rarr;</a>
         </article>
       </div>
@@ -254,14 +247,14 @@
     <div class="wrap faq">
       <div><small>ITS ADMISSION FAQS</small>
         <h2>Questions students ask most often.</h2>
-        <p>Need personal guidance on your engineering admission? Share your profile and our team will help you plan the
+        <p>Need personal guidance on your MBA or PGDM admission? Share your profile and our team will help you plan the
           next step.</p><a class="btn mint" href="#enquiry">Ask a Counsellor &rarr;</a>
       </div>
       <div>
         <details open>
-          <summary>Which engineering programmes can I explore at ITS?</summary>
-          <p>You can request guidance on the specialisations shown above and available options for the current admission
-            cycle.</p>
+          <summary>Which MBA and PGDM programmes can I explore at ITS?</summary>
+          <p>You can request guidance on the MBA and PGDM programmes, eligibility requirements and available options
+            for the current admission cycle.</p>
         </details>
         <details>
           <summary>How can I check my eligibility?</summary>
@@ -280,17 +273,8 @@
   </section>
   <section class="mba-hostel-fees"><div class="wrap"><header class="center"><small>MBA HOSTEL FEE STRUCTURE 2026–27</small><h2>MBA accommodation fee details.</h2><p>Hostel fee structure in Indian Rupees for the academic session 2026–27, based on the reference shared.</p></header><div class="hostel-table-wrap"><table><thead><tr><th>Description</th><th>Three Seater<br><small>Non-AC Room</small></th><th>Three Seater<br><small>AC Room</small></th><th>Two Seater<br><small>Non-AC Room</small></th><th>Two Seater<br><small>AC Room</small></th></tr></thead><tbody><tr><td>Hostel Fee (Fooding, Lodging)</td><td>₹1,24,000</td><td>₹1,54,000</td><td>₹1,74,000</td><td>₹2,19,000</td></tr><tr><td>Laundry</td><td>₹6,000</td><td>₹6,000</td><td>₹6,000</td><td>₹6,000</td></tr></tbody><tfoot><tr><th>Total</th><th>₹1,30,000</th><th>₹1,60,000</th><th>₹1,80,000</th><th>₹2,25,000</th></tr></tfoot></table></div><p class="hostel-note">Hostel fee details are based on the shared 2026–27 reference. Please confirm room availability, inclusions and payment terms with ITS before booking.</p></div></section>
   <script>
-    const btechFees = document.querySelector('.fees-panel');
-    const hostelFees = document.querySelector('.hostel-fees');
     const mbaFees = document.querySelector('.mba-fees');
     const mbaHostelFees = document.querySelector('.mba-hostel-fees');
-    if (btechFees && hostelFees) {
-      const feeCombo = document.createElement('div');
-      feeCombo.className = 'fee-combo';
-      feeCombo.innerHTML = '<div class="wrap fee-combo-title"><small>FEE &amp; ACCOMMODATION</small><h2>B.Tech fee structure &amp; hostel fees.</h2><p>Review your academic and accommodation costs together for the 2026–27 session.</p></div>';
-      btechFees.before(feeCombo);
-      feeCombo.append(btechFees, hostelFees);
-    }
     if (mbaFees && mbaHostelFees) {
       const mbaCombo = document.createElement('div');
       mbaCombo.className = 'fee-combo mba-combo';
