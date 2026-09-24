@@ -1,0 +1,171 @@
+:root { --cd-navy: #081a34; --cd-teal: #5ee6d6; --cd-ink: #10203d; --cd-muted: #5b6a85; --cd-line: #dce3ea; --cd-mist: #f2f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--cd-ink); font-family: Inter, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+.hero { min-height: 650px; }
+.campus-banner .hero-grid { width: min(1120px, calc(100% - 88px)); margin: 0 auto; grid-template-columns: minmax(0,1.08fr) minmax(400px,.92fr); gap: 42px; padding: 52px 0 58px; }
+.hero-copy h1 { max-width: 640px; margin: 24px 0 0; font: 900 clamp(38px,4.6vw,62px)/1.04 Poppins,sans-serif; letter-spacing: -.035em; }
+.hero-copy h1 span { color: var(--cd-teal); }
+.hero-copy h2 { margin: 27px 0 0; color: #fff; font: 700 clamp(20px,2vw,26px)/1.35 Poppins,sans-serif; }
+.hero-copy p { max-width: 620px; margin: 14px 0 0; color: rgba(255,255,255,.84); font-size: 16px; line-height: 1.75; }
+.eyebrow { font: 700 13px Poppins,sans-serif; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 31px; }
+.button { min-height: 54px; padding: 0 24px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid transparent; border-radius: 999px; font: 800 14px Poppins,sans-serif; transition: transform .2s ease,background .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { color: var(--cd-navy); background: var(--cd-teal); }
+.button-secondary { color: #fff; border-color: rgba(255,255,255,.5); background: rgba(255,255,255,.08); }
+.form-card { padding: 30px; border-radius: 22px; background: rgba(255,255,255,.98); box-shadow: 0 24px 70px rgba(0,0,0,.25); }
+.form-card h2 { color: var(--cd-navy); font: 700 27px/1.2 Poppins,sans-serif; }
+.form-card > p { margin: 11px 0 0; color: var(--cd-muted); font-size: 15px; line-height: 1.55; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; margin-top: 27px; }
+.field { width: 100%; height: 52px; padding: 0 16px; border: 1px solid var(--cd-line); border-radius: 14px; outline: 0; color: var(--cd-ink); background: #fff; font: 16px Inter,sans-serif; }
+.field::placeholder { color: #708099; opacity: 1; }
+.field:focus { border-color: #14a6a0; box-shadow: 0 0 0 3px rgba(20,166,160,.12); }
+select.field { appearance: none; padding-right: 40px; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2310203D' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") right 15px center/16px no-repeat; }
+.field-wide { grid-column: 1 / -1; }
+.submit { width: 100%; margin-top: 20px; border: 0; color: #fff; background: var(--cd-navy); cursor: pointer; }
+.form-note { margin-top: 13px; color: var(--cd-muted); font-size: 12px; text-align: center; }
+.section-wrap { width: min(1120px,calc(100% - 64px)); margin: 0 auto; }
+.programmes { padding: 82px 0 90px; background: #fff; }
+.section-heading { max-width: 720px; margin: 0 auto; text-align: center; }
+.section-heading small,.guidance small,.faq small { color: #129b96; font: 800 12px Poppins,sans-serif; letter-spacing: .14em; }
+.section-heading h2,.guidance h2,.faq h2 { margin: 10px 0 0; color: var(--cd-navy); font: 800 clamp(28px,4vw,42px)/1.15 Poppins,sans-serif; letter-spacing: -.025em; }
+.section-heading p,.guidance-grid > div:first-child > p,.faq-grid > div:first-child > p { margin: 14px 0 0; color: var(--cd-muted); font-size: 15px; line-height: 1.75; }
+.programme-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 38px; }
+.chitkara-programme-grid { grid-template-columns: repeat(3,minmax(0,1fr)); margin-top: 0; }
+.programme-card { padding: 27px; border: 1px solid var(--cd-line); border-radius: 18px; background: #fff; box-shadow: 0 8px 25px rgba(8,26,52,.045); }
+.programme-card > span { color: #159d96; font: 800 11px Poppins,sans-serif; letter-spacing: .12em; }
+.programme-card h3 { margin: 13px 0 0; color: var(--cd-navy); font: 700 21px/1.3 Poppins,sans-serif; }
+.programme-card p { min-height: 78px; margin: 11px 0 18px; color: var(--cd-muted); font-size: 14px; line-height: 1.65; }
+.programme-card a { display: inline-flex; gap: 9px; color: #087e7a; font: 700 13px Poppins,sans-serif; }
+.campus-life { padding: 76px 0; background: #fff; }
+.campus-life-grid { width: min(1680px,calc(100% - 80px)); display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 70px; }
+.campus-life-grid img { display: block; width: 100%; height: 395px; border-radius: 18px; object-fit: cover; box-shadow: 0 18px 42px rgba(8,26,52,.12); }
+.campus-life-copy small { color: #159d96; font: 800 12px Poppins,sans-serif; letter-spacing: .14em; }
+.campus-life-copy h2 { margin: 12px 0 0; color: var(--cd-navy); font: 800 clamp(34px,4vw,56px)/1.12 Poppins,sans-serif; letter-spacing: -.025em; }
+.campus-life-copy p { margin: 16px 0 0; color: var(--cd-muted); font-size: 16px; line-height: 1.8; }
+.campus-life-copy a { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; color: #078c86; font: 700 15px Poppins,sans-serif; }
+.admissions-open { padding: 64px 0 72px; background: #fff; }
+.admissions-open-wrap { width: min(1680px,calc(100% - 80px)); }
+.admissions-open h2 { color: var(--cd-navy); font: 800 clamp(34px,5vw,62px)/1.1 Poppins,sans-serif; letter-spacing: -.03em; }
+.admissions-open .fee-rule { margin-top: 20px; }
+.admissions-open-intro { max-width: 1120px; margin: 24px 0 0; color: var(--cd-muted); font-size: 17px; line-height: 1.75; }
+.admissions-open-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; margin-top: 42px; }
+.admissions-open-grid article { min-height: 230px; padding: 36px 38px; border: 1px solid #d5e0e9; border-radius: 18px; background: #f2f6f8; }
+.admission-icon { display: grid; width: 34px; height: 34px; place-items: center; margin-bottom: 25px; border: 2px solid #18a79f; border-radius: 5px; color: #18a79f; font: 700 20px Inter,sans-serif; }
+.admissions-open-grid small { color: var(--cd-muted); font: 700 12px Poppins,sans-serif; letter-spacing: .06em; }
+.admissions-open-grid h3 { margin: 10px 0 0; color: var(--cd-navy); font: 700 clamp(19px,2vw,25px)/1.35 Poppins,sans-serif; }
+.portal-register { padding: 34px 0; background: linear-gradient(110deg,#effaf8 0%,#f7f9f1 100%); }
+.portal-register-wrap { width: min(1680px,calc(100% - 80px)); }
+.portal-register h2 { color: var(--cd-navy); font: 800 clamp(27px,3.2vw,40px)/1.2 Poppins,sans-serif; }
+.portal-register-wrap > p { margin: 24px 0 0; color: #31415d; font-size: 17px; line-height: 1.7; }
+.portal-register-button { display: inline-flex; min-width: 360px; min-height: 70px; align-items: center; justify-content: center; gap: 14px; margin-top: 32px; padding: 0 30px; border-radius: 999px; color: var(--cd-teal); background: var(--cd-navy); font: 800 16px Poppins,sans-serif; }
+.portal-register-button span { display: flex; color: #9664bb; }.portal-register-button span svg { width: 21px; height: 21px; fill: currentColor; }
+.portal-steps { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 32px; }
+.portal-steps > div { display: flex; min-height: 58px; align-items: center; gap: 14px; padding: 0 24px; border: 1px solid #cfe0e4; border-radius: 999px; color: var(--cd-ink); background: rgba(255,255,255,.85); font: 700 14px Poppins,sans-serif; }
+.portal-steps b { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 50%; color: #fff; background: var(--cd-navy); }
+.brochure-section { padding: 56px 0 72px; background: #fff; }
+.brochure-wrap { width: min(1680px,calc(100% - 80px)); }
+.brochure-wrap > h2 { color: var(--cd-navy); font: 800 clamp(34px,4.5vw,56px)/1.15 Poppins,sans-serif; letter-spacing: -.03em; }
+.brochure-wrap > p { margin: 20px 0 0; color: var(--cd-muted); font-size: 17px; line-height: 1.7; }
+.brochure-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; margin-top: 44px; }
+.brochure-card { display: grid; min-height: 220px; grid-template-columns: 110px minmax(0,1fr) 180px; align-items: center; gap: 28px; padding: 36px 42px; border: 1px solid #d5e0e9; border-radius: 18px; background: #fff; box-shadow: 0 16px 36px rgba(8,26,52,.055); }
+.pdf-mark { display: grid; width: 92px; height: 92px; place-items: center; border-radius: 16px; color: #ba4051; background: #fff0f2; font: 800 15px Poppins,sans-serif; }
+.brochure-card h3 { color: var(--cd-navy); font: 700 clamp(19px,2vw,24px)/1.35 Poppins,sans-serif; }
+.brochure-card p { margin: 12px 0 0; color: var(--cd-muted); font-size: 15px; line-height: 1.6; }
+.brochure-card > a { display: inline-flex; min-height: 72px; align-items: center; justify-content: center; border-radius: 999px; color: #fff; background: var(--cd-navy); font: 700 15px/1.4 Poppins,sans-serif; text-align: center; }
+.important-update { padding: 28px 0 52px; background: #fff; }
+.important-update-card { width: min(1680px,calc(100% - 80px)); padding: 40px 58px; border: 1px solid #d5e0e9; border-left: 6px solid #17a79f; border-radius: 18px; background: linear-gradient(110deg,#eefaf8 0%,#fbfaf2 100%); }
+.important-update-card h2 { display: flex; align-items: center; gap: 22px; color: var(--cd-navy); font: 800 clamp(30px,4vw,54px)/1.15 Poppins,sans-serif; }
+.important-update-card h2 span { flex: 0 0 auto; color: #17a79f; font: 700 .7em Inter,sans-serif; }
+.important-update-card p { margin: 24px 0 0; color: #293a56; font-size: 17px; line-height: 1.75; }
+.chitkara-guidance { padding: 58px 0 76px; background: #f0f6f6; }
+.chitkara-guidance-heading { margin: 0 auto; text-align: center; }
+.chitkara-guidance-heading small { color: #149e98; font: 800 12px Poppins,sans-serif; letter-spacing: .14em; }
+.chitkara-guidance-heading h2 { margin: 12px 0 0; color: var(--cd-navy); font: 800 clamp(32px,4.5vw,54px)/1.15 Poppins,sans-serif; letter-spacing: -.03em; }
+.chitkara-guidance-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; margin-top: 38px; }
+.chitkara-guidance-grid article { min-height: 228px; padding: 32px 34px; border: 1px solid #d5e0e9; border-radius: 18px; background: #fff; }
+.chitkara-guidance-grid h3 { color: var(--cd-navy); font: 700 22px/1.3 Poppins,sans-serif; }
+.chitkara-guidance-grid span { display: block; margin-top: 8px; color: var(--cd-muted); font-size: 14px; }
+.chitkara-guidance-grid p { margin: 18px 0 0; color: #34435e; font-size: 15px; line-height: 1.65; }
+.engineering-fees { display: block; width: 100%; padding: 58px 24px 64px; background: #f5f8fa; }
+.engineering-fees .section-wrap { width: 100%; }
+.fee-heading h2 { color: var(--cd-navy); font: 800 clamp(32px,4vw,46px)/1.15 Poppins,sans-serif; letter-spacing: -.025em; }
+.fee-rule { width: 90px; height: 5px; margin-top: 18px; border-radius: 5px; background: linear-gradient(90deg,#a33a3f 0%,#f4b52c 48%,#14a6a0 100%); }
+.fee-heading p { margin: 19px 0 0; color: var(--cd-muted); font-size: 16px; line-height: 1.7; }
+.fee-total { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-top: 30px; padding: 38px 42px; border-radius: 14px; color: #fff; background: linear-gradient(105deg,#172037 0%,#8e3542 52%,#0e7d75 100%); box-shadow: 0 18px 34px rgba(8,26,52,.12); }
+.fee-total small { display: block; font: 800 14px Poppins,sans-serif; }
+.fee-total strong { display: block; margin-top: 10px; font: 900 clamp(36px,5vw,52px)/1 Poppins,sans-serif; }
+.fee-total span { display: block; margin-top: 12px; color: rgba(255,255,255,.86); font-size: 14px; }
+.fee-total .button { flex-shrink: 0; min-width: 240px; color: var(--cd-navy); background: #fff; }
+.management-fees .fee-total { align-items: stretch; flex-direction: column; gap: 22px; }
+.fee-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.fee-summary > div { min-width: 0; }
+.fee-summary strong { font-size: clamp(24px,2.15vw,34px); line-height: 1.15; }
+.management-fees .fee-total .button { align-self: flex-start; }
+.fee-details-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; margin-top: 28px; }
+.fee-detail-card { min-height: 188px; padding: 28px 32px; border: 1px solid #d5e0e9; border-radius: 16px; background: #fff; }
+.fee-detail-card small { display: block; color: #159d96; font: 800 12px Poppins,sans-serif; letter-spacing: .1em; }
+.fee-detail-card h3 { margin: 20px 0 0; color: var(--cd-navy); font: 800 clamp(24px,3vw,34px)/1.15 Poppins,sans-serif; }
+.fee-detail-card p { margin: 12px 0 0; color: var(--cd-muted); font-size: 15px; line-height: 1.6; }
+.accommodation-fees { padding: 66px 24px 76px; background: #fff; }
+.accommodation-fees .section-wrap { width: min(1120px,100%); }
+.hostel-fee-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; margin-top: 36px; }
+.hostel-fee-card { min-height: 220px; padding: 34px 30px; border: 1px solid #d5e0e9; border-top: 5px solid transparent; border-image: linear-gradient(90deg,#a33a3f,#f4b52c,#14a6a0) 1; border-radius: 16px; background: #fff; box-shadow: 0 12px 32px rgba(8,26,52,.05); }
+.hostel-fee-card h3 { color: var(--cd-navy); font: 700 19px/1.45 Poppins,sans-serif; }
+.hostel-fee-card strong { display: block; margin-top: 22px; color: var(--cd-navy); font: 800 clamp(23px,2.2vw,30px)/1.2 Poppins,sans-serif; }
+.hostel-fee-card p { margin: 10px 0 0; color: var(--cd-muted); font-size: 14px; line-height: 1.6; }
+.guidance { padding: 75px 0; background: var(--cd-mist); }
+.guidance-grid { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 72px; }
+.guidance-grid > div:first-child > p { max-width: 430px; }
+.guidance-list { display: grid; gap: 13px; }
+.guidance-list > div { display: flex; align-items: center; gap: 18px; padding: 18px 20px; border: 1px solid var(--cd-line); border-radius: 14px; background: #fff; }
+.guidance-list b { color: #16a69f; font: 800 20px Poppins,sans-serif; }
+.guidance-list strong,.guidance-list small { display: block; }
+.guidance-list strong { color: var(--cd-navy); font: 700 15px Poppins,sans-serif; }
+.guidance-list small { margin-top: 4px; color: var(--cd-muted); font-size: 13px; line-height: 1.5; }
+.faq { padding: 82px 0 90px; }
+.faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; }
+.faq-grid .button { margin-top: 23px; }
+.faq-list { border-top: 1px solid var(--cd-line); }
+.faq-list details { padding: 20px 2px; border-bottom: 1px solid var(--cd-line); }
+.faq-list summary { position: relative; padding-right: 28px; color: var(--cd-navy); cursor: pointer; list-style: none; font: 700 15px/1.5 Poppins,sans-serif; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; position: absolute; right: 0; top: 0; color: #149e98; font-size: 21px; line-height: 1; }
+.faq-list details[open] summary::after { content: '−'; }
+.faq-list details p { margin: 11px 28px 0 0; color: var(--cd-muted); font-size: 14px; line-height: 1.7; }
+.page-footer { padding: 36px 0 18px; color: #fff; background: var(--cd-navy); }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding-bottom: 28px; }
+.footer-inner p { color: rgba(255,255,255,.72); font-size: 13px; }
+.footer-inner > a:last-child { color: var(--cd-teal); font-size: 14px; font-weight: 700; }
+.footer-bottom { padding-top: 16px; border-top: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.6); font-size: 12px; }
+@media(max-width:900px) { .hero { min-height: auto; }.campus-banner .hero-grid { grid-template-columns: 1fr; gap: 38px; padding: 48px 0 54px; }.hero-copy h1 { max-width: 720px; }.form-card { max-width: 680px; }.guidance-grid,.faq-grid { grid-template-columns: 1fr; gap: 34px; }.campus-life-grid { width: min(100% - 64px,720px); grid-template-columns: 1fr; gap: 28px; }.campus-life-grid img { height: 320px; }.admissions-open-wrap { width: min(100% - 64px,900px); }.admissions-open-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }.programme-grid { grid-template-columns: 1fr 1fr; }.chitkara-programme-grid { grid-template-columns: 1fr 1fr; }.engineering-fees { display: block; width: 100%; padding: 54px 32px; }.hostel-fee-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .campus-banner .hero-grid,.section-wrap { width: min(100% - 40px,1120px); }.campus-banner .hero-grid { padding: 38px 0 44px; }.hero-copy h1 { font-size: clamp(38px,11vw,56px); }.hero-copy p { font-size: 14px; }.form-card { padding: 25px 20px; border-radius: 18px; }.form-card h2 { font-size: 23px; }.form-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 21px; }.field-wide { grid-column: auto; }.programme-grid { grid-template-columns: 1fr; }.programme-card p { min-height: 0; }.programmes,.faq { padding: 60px 0; }.engineering-fees { padding: 44px 20px; }.fee-heading h2 { font-size: 30px; }.fee-total { align-items: flex-start; flex-direction: column; padding: 28px 24px; }.fee-total .button { min-width: 0; }.fee-summary { grid-template-columns: 1fr; gap: 20px; }.fee-details-grid { grid-template-columns: 1fr; gap: 14px; }.fee-detail-card { min-height: 0; padding: 24px; }.accommodation-fees { padding: 54px 20px; }.hostel-fee-grid { grid-template-columns: 1fr; gap: 14px; }.hostel-fee-card { min-height: 0; padding: 26px 24px; }.guidance { padding: 58px 0; }.footer-inner { align-items: flex-start; flex-direction: column; }.footer-inner p { margin: 0; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior: auto !important; transition: none !important; } }
+@media(max-width:600px) { .admissions-open-wrap { width: min(100% - 40px,1120px); }.admissions-open { padding: 52px 0 58px; }.admissions-open-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 30px; }.admissions-open-grid article { min-height: 190px; padding: 28px; } }
+@media(max-width:600px) { .portal-register-wrap { width: min(100% - 40px,1120px); }.portal-register { padding: 40px 0; }.portal-register-wrap > p { font-size: 15px; }.portal-register-button { min-width: 0; width: 100%; min-height: 60px; }.portal-steps { flex-direction: column; gap: 10px; }.portal-steps > div { justify-content: flex-start; } }
+@media(max-width:900px) { .brochure-wrap { width: min(100% - 64px,900px); }.brochure-grid { grid-template-columns: 1fr; gap: 18px; }.brochure-card { grid-template-columns: 90px minmax(0,1fr) 150px; gap: 22px; } }
+@media(max-width:600px) { .brochure-wrap { width: min(100% - 40px,1120px); }.brochure-section { padding: 48px 0 56px; }.brochure-card { grid-template-columns: 62px minmax(0,1fr); gap: 16px; padding: 24px; }.pdf-mark { width: 58px; height: 58px; font-size: 12px; }.brochure-card > a { grid-column: 1 / -1; min-height: 54px; } }
+@media(max-width:600px) { .important-update { padding: 24px 0 34px; }.important-update-card { width: min(100% - 40px,1120px); padding: 28px 22px; }.important-update-card h2 { align-items: flex-start; gap: 12px; font-size: 27px; }.important-update-card p { margin-top: 16px; font-size: 15px; } }
+@media(max-width:900px) { .chitkara-guidance-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .chitkara-guidance { padding: 46px 0 54px; }.chitkara-guidance-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 28px; }.chitkara-guidance-grid article { min-height: 0; padding: 25px; } }
+.chitkara-faq { padding: 76px 0 84px; background: var(--cd-mist); }
+.chitkara-faq-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; }
+.chitkara-faq-intro > small { color: #119f99; font-size: 13px; font-weight: 800; letter-spacing: 2px; }
+.chitkara-faq-intro > h2 { margin: 18px 0 30px; color: var(--cd-navy); font: 800 clamp(36px,4vw,54px)/1.15 Poppins,sans-serif; }
+.chitkara-faq-help { padding: 34px; border: 1px solid var(--cd-line); border-radius: 22px; background: #fff; box-shadow: 0 16px 42px rgba(7,24,54,.06); }
+.chitkara-faq-help h3 { margin: 0 0 12px; color: var(--cd-navy); font: 700 24px Poppins,sans-serif; }
+.chitkara-faq-help p,.chitkara-faq-list details p { color: var(--cd-muted); font-size: 15px; line-height: 1.75; }
+.chitkara-faq-help ul { display: grid; gap: 12px; margin: 22px 0 25px; padding: 0; list-style: none; }
+.chitkara-faq-help li { position: relative; padding-left: 26px; color: var(--cd-navy); font-weight: 600; }
+.chitkara-faq-help li::before { content: '•'; position: absolute; left: 4px; color: #12a69f; font-size: 22px; line-height: 1; }
+.chitkara-faq-help > a { display: flex; min-height: 58px; align-items: center; justify-content: center; border-radius: 40px; color: var(--cd-navy); background: var(--cd-teal); font-weight: 800; text-decoration: none; }
+.chitkara-faq-list { display: grid; gap: 16px; }
+.chitkara-faq-list details { padding: 25px 28px; border: 1px solid var(--cd-line); border-radius: 18px; background: #fff; box-shadow: 0 12px 35px rgba(7,24,54,.04); }
+.chitkara-faq-list summary { position: relative; padding-right: 44px; color: var(--cd-navy); cursor: pointer; list-style: none; font: 700 18px/1.5 Poppins,sans-serif; }
+.chitkara-faq-list summary::-webkit-details-marker { display: none; }
+.chitkara-faq-list summary::after { content: '+'; position: absolute; right: 0; top: 50%; display: grid; width: 40px; height: 40px; place-items: center; transform: translateY(-50%); border-radius: 50%; color: #119f99; background: #e9f7f5; font-size: 24px; }
+.chitkara-faq-list details[open] summary::after { content: '−'; }
+.chitkara-faq-list details p { margin: 20px 40px 0 0; }
+@media(max-width:900px) { .chitkara-faq-layout { grid-template-columns: 1fr; gap: 36px; }.chitkara-faq-intro > h2 { max-width: 650px; } }
+@media(max-width:600px) { .chitkara-faq { padding: 52px 0 58px; }.chitkara-faq-layout { width: min(100% - 40px,1120px); gap: 26px; }.chitkara-faq-intro > h2 { margin: 14px 0 22px; font-size: 34px; }.chitkara-faq-help { padding: 25px 22px; }.chitkara-faq-list { gap: 12px; }.chitkara-faq-list details { padding: 20px; }.chitkara-faq-list summary { font-size: 16px; }.chitkara-faq-list summary::after { width: 34px; height: 34px; }.chitkara-faq-list details p { margin-right: 0; font-size: 14px; } }

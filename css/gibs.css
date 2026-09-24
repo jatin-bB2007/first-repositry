@@ -94,7 +94,39 @@ select.field { appearance: none; padding-right: 38px; background: #fff url("data
 .fee-total small { display: block; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 800; letter-spacing: .02em; }
 .fee-total strong { display: block; margin-top: 10px; font-family: 'Poppins', sans-serif; font-size: clamp(36px, 5vw, 52px); font-weight: 900; line-height: 1; }
 .fee-total .button { flex-shrink: 0; min-width: 308px; color: var(--navy-deep); background: #fff; }
+.pgdm-fee-table-wrap { margin-top: 28px; overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.pgdm-fee-table { width: 100%; border-collapse: collapse; color: var(--ink); font-size: 15px; text-align: left; }
+.pgdm-fee-table caption { padding: 18px 20px; color: var(--navy-deep); font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 700; text-align: left; }
+.pgdm-fee-table th, .pgdm-fee-table td { padding: 14px 18px; border-top: 1px solid var(--line); }
+.pgdm-fee-table thead th { color: #fff; background: var(--navy-deep); font-size: 13px; font-weight: 700; }
+.pgdm-fee-table tbody th { font-weight: 600; }
+.pgdm-fee-table td:not(:first-child), .pgdm-fee-table thead th:not(:first-child) { text-align: right; white-space: nowrap; }
+.pgdm-fee-table-total-row { color: var(--navy-deep); background: #edf5f6; font-weight: 800; }
+.soil-photo-section { padding: 66px 0 72px; background: #fff; }
+.soil-photo-heading { max-width: 720px; margin: 0 auto 30px; text-align: center; }
+.soil-photo-heading small { color: var(--teal); font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: .15em; }
+.soil-photo-heading h2 { margin-top: 8px; color: var(--navy-deep); font-family: 'Poppins', sans-serif; font-size: clamp(28px, 3.5vw, 40px); line-height: 1.2; }
+.soil-photo-heading p { margin-top: 10px; color: var(--muted); font-size: 16px; line-height: 1.7; }
+.soil-photo-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 16px; }
+.soil-photo { position: relative; min-width: 0; height: 290px; overflow: hidden; border-radius: 14px; background: var(--mist); }
+.soil-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.soil-photo figcaption { position: absolute; inset: auto 0 0; padding: 30px 18px 17px; color: #fff; background: linear-gradient(transparent, rgba(8,26,52,.86)); font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700; line-height: 1.4; }
+.soil-photo-featured { height: 100%; min-height: 290px; }
+.soil-photo-source { margin-top: 13px; color: var(--muted); font-size: 12px; text-align: right; }
+.soil-photo-source a { color: var(--navy-mid); font-weight: 600; }
+.soil-immersion { padding: 74px 0; background: #f8f8f6; }
+.soil-immersion-grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 64px; align-items: center; }
+.soil-immersion-copy { order: 1; max-width: 650px; }
+.soil-immersion-reversed .soil-immersion-copy { order: 2; }
+.soil-immersion-kicker { display: flex; align-items: center; gap: 14px; color: var(--ink); font-size: 15px; font-weight: 600; }
+.soil-immersion-kicker span { color: #d1b876; font-size: 20px; }
+.soil-immersion-copy h2 { margin-top: 24px; color: #272d31; font-family: 'Poppins', sans-serif; font-size: clamp(28px, 3vw, 40px); font-weight: 500; line-height: 1.3; }
+.soil-immersion-copy p { margin-top: 23px; color: #42484c; font-size: 17px; line-height: 1.9; }
+.soil-immersion-photo { order: 2; height: 500px; overflow: hidden; border-radius: 12px; background: var(--mist); }
+.soil-immersion-reversed .soil-immersion-photo { order: 1; }
+.soil-immersion-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .installment-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 22px; }
+.pgdm-year-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .installment { min-height: 222px; padding: 28px; border: 1px solid #e2e8ed; border-radius: 10px; background: #fff; box-shadow: 0 14px 28px rgba(8,26,52,.06); }
 .installment-number { display: grid; width: 43px; height: 43px; place-items: center; border-radius: 50%; color: #087d78; background: #e5f5f4; font-family: 'Poppins', sans-serif; font-weight: 800; }
 .installment h3 { margin-top: 20px; color: var(--navy-deep); font-family: 'Poppins', sans-serif; font-size: 27px; line-height: 1.15; }
@@ -238,6 +270,12 @@ select.field { appearance: none; padding-right: 38px; background: #fff url("data
 	.campus-life-media, .campus-life-media img { min-height: 390px; }
 	.faq-layout { grid-template-columns: 1fr; gap: 32px; }
 	.faq-intro > h2 { max-width: 620px; }
+	.soil-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.soil-photo-featured { grid-column: 1 / -1; height: 340px; min-height: 0; }
+	.soil-immersion-grid { grid-template-columns: 1fr; gap: 35px; }
+	.soil-immersion-reversed .soil-immersion-copy { order: 1; }
+	.soil-immersion-reversed .soil-immersion-photo { order: 2; }
+	.soil-immersion-photo { height: 420px; }
 }
 
 @media (max-width: 560px) {
@@ -309,6 +347,12 @@ select.field { appearance: none; padding-right: 38px; background: #fff url("data
 	.faq-item summary { padding: 18px 52px 18px 18px; font-size: 15px; }
 	.faq-item summary::after { right: 17px; }
 	.faq-item p { padding: 0 18px 18px; font-size: 14px; }
+	.soil-photo-section { padding: 48px 0 54px; }
+	.soil-photo-grid { grid-template-columns: 1fr; gap: 12px; }
+	.soil-photo, .soil-photo-featured { height: 240px; min-height: 0; }
+	.soil-immersion { padding: 50px 0; }
+	.soil-immersion-photo { height: 280px; }
+	.soil-immersion-copy p { font-size: 15px; line-height: 1.75; }
 }
 
 @media (prefers-reduced-motion: reduce) {
