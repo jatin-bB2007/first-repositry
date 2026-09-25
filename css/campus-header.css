@@ -12,13 +12,14 @@
 
 .campus-header-inner {
 	box-sizing: border-box;
-	width: min(1180px, calc(100% - 64px));
+	width: min(1680px, calc(100% - 48px)) !important;
+	max-width: none !important;
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 24px;
+	gap: 14px;
 }
 
 .campus-brand {
@@ -59,30 +60,39 @@
 
 .campus-nav {
 	display: flex;
-	flex: 1;
+	flex: 1 1 auto;
+	min-width: 0;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 3px;
-	padding: 5px;
+	padding: 6px;
 	border: 1px solid rgba(255,255,255,.13);
 	border-radius: 999px;
 	background: rgba(4, 18, 39, .28);
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
 }
 
-.campus-nav a {
-	padding: 9px 12px;
+.campus-nav a,
+.campus-nav-menu > summary {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	gap: 8px;
+	padding: 0 12px;
 	border-radius: 999px;
 	color: rgba(255,255,255,.78);
 	font-family: 'Poppins', sans-serif;
-	font-size: 12px;
-	font-weight: 700;
+	font-size: 13px;
+	font-weight: 800;
 	text-decoration: none;
 	white-space: nowrap;
+	cursor: pointer;
 	transition: color .2s ease, background .2s ease, transform .2s ease;
 }
 
-.campus-nav a:hover {
+.campus-nav a:hover,
+.campus-nav-menu > summary:hover,
+.campus-nav-menu[open] > summary {
 	color: #fff;
 	background: rgba(255,255,255,.1);
 	transform: translateY(-1px);
@@ -92,6 +102,97 @@
 	color: #081A34;
 	background: #5EE6D6;
 	box-shadow: 0 5px 14px rgba(94,230,214,.2);
+}
+
+.campus-nav-menu {
+	position: relative;
+}
+
+.campus-nav-menu summary {
+	list-style: none;
+}
+
+.campus-nav-menu summary::-webkit-details-marker {
+	display: none;
+}
+
+.campus-nav-menu summary::after {
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	opacity: .9;
+	transform: translateY(-2px) rotate(45deg);
+	transition: transform .2s ease, opacity .2s ease;
+}
+
+.campus-nav-menu[open] summary::after {
+	opacity: 1;
+	transform: translateY(2px) rotate(225deg);
+}
+
+.campus-nav-dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 20;
+	display: none;
+	min-width: 210px;
+	padding: 8px;
+	border: 1px solid rgba(8, 26, 52, .12);
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0 18px 35px rgba(4, 18, 39, .2);
+}
+
+.campus-nav-menu:hover .campus-nav-dropdown,
+.campus-nav-menu:focus-within .campus-nav-dropdown,
+.campus-nav-menu[open] .campus-nav-dropdown {
+	display: grid;
+}
+
+.campus-nav-dropdown-wide {
+	grid-template-columns: repeat(2, minmax(205px, 1fr));
+	min-width: 440px;
+}
+
+.campus-nav-dropdown a {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	min-height: auto;
+	padding: 10px 12px;
+	border-radius: 8px;
+	color: #24364a;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.campus-nav-dropdown a:hover {
+	color: #081A34;
+	background: #E4F8F3;
+	transform: none;
+}
+
+.campus-nav-dropdown .campus-nav-featured {
+	grid-column: 1 / -1;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 6px;
+	border: 1px solid rgba(94,230,214,.48);
+	border-radius: 999px;
+	color: #081A34;
+	background: linear-gradient(135deg, #5EE6D6, #DFFBF7);
+	box-shadow: 0 8px 18px rgba(8,26,52,.1);
+	font-size: 13px;
+	font-weight: 900;
+}
+
+.campus-nav-dropdown .campus-nav-featured:hover {
+	color: #081A34;
+	background: linear-gradient(135deg, #78F1E4, #fff);
 }
 
 .campus-header-action {
@@ -125,25 +226,35 @@
 		flex-basis: 100%;
 		justify-content: flex-start;
 		gap: 3px;
-		overflow-x: auto;
+		overflow: visible;
+		flex-wrap: wrap;
 		padding-bottom: 5px;
 	}
 }
 
 @media (max-width: 560px) {
 	.campus-header-inner {
-		width: min(100% - 40px, 1180px);
+		width: min(100% - 32px, 1680px) !important;
 		align-items: flex-start;
 	}
 
 	.campus-nav {
-		gap: 14px;
+		gap: 4px;
 	}
 
-	.campus-nav a {
-		padding-right: 0;
-		padding-left: 0;
-		font-size: 11px;
+	.campus-nav a,
+	.campus-nav-menu > summary {
+		min-height: 38px;
+		padding: 0 10px;
+		font-size: 12px;
+	}
+
+	.campus-nav-dropdown,
+	.campus-nav-dropdown-wide {
+		left: 50%;
+		grid-template-columns: 1fr;
+		min-width: min(260px, calc(100vw - 48px));
+		transform: translateX(-50%);
 	}
 
 	.campus-header-action {
@@ -153,6 +264,8 @@
 
 @media (prefers-reduced-motion: reduce) {
 	.campus-nav a,
+	.campus-nav-menu > summary,
+	.campus-nav-menu summary::after,
 	.campus-header-action {
 		transition: none;
 	}

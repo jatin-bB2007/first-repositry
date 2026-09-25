@@ -427,6 +427,7 @@
   }
 
   .footer-inner a:hover{ color: #fff; }
+  .campus-header-action{ color:#fff; }
 
   /* ---------- Content sections ---------- */
   .content-section{ padding: 92px 0; }
@@ -441,13 +442,37 @@
   .two-column{ display:grid; grid-template-columns: .9fr 1.1fr; gap: 88px; align-items:start; }
   .section-copy, .section-intro{ color: var(--muted); font-size: 16px; line-height: 1.8; }
   .section-copy p + p{ margin-top: 16px; }
+  .overview-images{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:28px; }
+  .overview-images img{ width:100%; height:150px; object-fit:cover; border-left:4px solid var(--teal); border-radius:2px; }
   .text-link{ display:inline-flex; gap: 9px; margin-top: 25px; color: var(--navy); font-weight: 800; }
   .text-link span{ color: var(--teal); }
+  .blue-link-btn{
+    display:inline-flex;
+    align-items:center;
+    gap: 9px;
+    margin-top: 25px;
+    padding: 14px 22px;
+    background: linear-gradient(100deg, #0D2F5B 0%, #1E7FE8 100%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(20, 88, 193, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .blue-link-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 16px 30px rgba(20, 88, 193, 0.28);
+  }
+  .blue-link-btn span{ color: #fff; }
   .section-heading{ max-width: 680px; margin-bottom: 42px; }
   .benefits{ background: var(--mist); }
   .card-grid, .timeline-grid, .outcome-grid, .process-grid{ display:grid; gap: 20px; }
   .three-up, .outcome-grid{ grid-template-columns: repeat(3, 1fr); }
   .info-card{ background:#fff; padding:30px; border-top: 4px solid var(--teal); }
+  .benefits .info-card{ background:var(--navy); border-top-color:#fff; }
+  .benefits .info-card h3, .benefits .info-card p, .benefits .info-card .card-number{ color:#fff; }
   .card-number, .timeline-grid span, .process-grid span{ color:var(--teal); font-weight:800; font-size:13px; letter-spacing:.08em; }
   .info-card h3, .timeline-grid h3, .process-grid h3{ font-family:'Poppins', sans-serif; color:var(--navy); font-size:19px; margin:17px 0 10px; }
   .info-card p, .timeline-grid p, .process-grid p{ color:var(--muted); font-size:14px; line-height:1.7; }
@@ -467,13 +492,18 @@
   .outcome-grid strong{ color:var(--navy); font-family:'Poppins',sans-serif; font-size:18px; }
   .outcome-grid span{ margin-top:9px; color:var(--muted); font-size:14px; line-height:1.55; }
   .eligibility-panel{ border:1px solid var(--line); padding:10px 28px 24px; }
+  .eligibility h2{ margin-bottom:32px; }
   .eligibility-panel > div{ display:flex; gap:18px; padding:19px 0; border-bottom:1px solid var(--line); }
   .eligibility-panel span{ color:var(--teal); font-weight:800; }
   .eligibility-panel p{ color:var(--muted); line-height:1.55; font-size:14px; }
   .process{ background:var(--mist); }
   .process-grid{ grid-template-columns:repeat(4,1fr); counter-reset:steps; }
   .process-grid li{ list-style:none; background:#fff; padding:26px 22px; min-height:210px; }
+  .process-grid li{ background:var(--navy); }
+  .process-grid li span, .process-grid li h3, .process-grid li p{ color:#fff; }
   .faq-section{ border-bottom:1px solid var(--line); }
+  .faq-section h2, .student-life h2, .contact-section h2{ margin-bottom:32px; }
+  .faq-section .section-intro + .section-intro{ margin-top:16px; }
   .faq-list{ border-top:1px solid var(--line); }
   .faq-list details{ border-bottom:1px solid var(--line); padding:18px 0; }
   .faq-list summary{ cursor:pointer; color:var(--navy); font-weight:800; padding-right:24px; }
@@ -484,25 +514,32 @@
   .course-tag{ display:inline-block; font-size:11px; font-weight:800; letter-spacing:.08em; color:var(--teal); background:rgba(20,166,160,0.1); padding:8px 10px; margin-bottom:18px; }
   .course-card h3{ font-family:'Poppins',sans-serif; color:var(--navy); font-size:20px; margin-bottom:10px; }
   .course-card p{ color:var(--muted); line-height:1.7; font-size:14px; }
+  .course-showcase .course-card{ background:var(--navy); border-color:var(--navy); }
+  .course-showcase .course-tag,
+  .course-showcase .course-card h3,
+  .course-showcase .course-card p{ color:#fff; }
+  .course-showcase .course-tag{ background:rgba(255,255,255,.12); }
   .mini-stats{ display:grid; grid-template-columns: repeat(3,1fr); gap:18px; margin-top:30px; }
   .mini-stats div{ background:linear-gradient(180deg,#f6fbfb,#edf7f7); border:1px solid var(--line); padding:18px 16px; }
   .mini-stats strong{ display:block; color:var(--navy); font-size:28px; font-family:'Poppins',sans-serif; }
   .mini-stats span{ display:block; color:var(--muted); font-size:13px; margin-top:8px; }
   .fees-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   .fee-box{ background:#fff; border:1px solid var(--line); padding:26px 22px; }
-  .fee-box h3{ font-family:'Poppins',sans-serif; font-size:20px; color:var(--navy); margin-bottom:10px; }
+  .fee-box h3{ font-family:'Poppins',sans-serif; font-size:20px; color:var(--navy); margin-bottom:18px; }
   .fee-box p{ color:var(--muted); line-height:1.7; font-size:14px; }
+  .fees-section .fee-box{ background:var(--navy); border-color:var(--navy); }
+  .fees-section .fee-box h3, .fees-section .fee-box p{ color:#fff; }
   .placement-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   .placement-card{ background:linear-gradient(180deg,#0f2b4c,#0d2140); color:#fff; padding:28px 22px; }
-  .placement-card strong{ display:block; font-size:18px; margin-bottom:10px; }
+  .placement-card strong{ display:block; font-size:18px; margin-bottom:18px; }
   .placement-card span{ color:#dfeef1; font-size:14px; line-height:1.7; }
   .fees-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   .fee-box{ background:#fff; border:1px solid var(--line); padding:26px 22px; }
-  .fee-box h3{ font-family:'Poppins',sans-serif; font-size:20px; color:var(--navy); margin-bottom:10px; }
+  .fee-box h3{ font-family:'Poppins',sans-serif; font-size:20px; color:var(--navy); margin-bottom:18px; }
   .fee-box p{ color:var(--muted); line-height:1.7; font-size:14px; }
   .placement-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   .placement-card{ background:linear-gradient(180deg,#0f2b4c,#0d2140); color:#fff; padding:28px 22px; }
-  .placement-card strong{ display:block; font-size:18px; margin-bottom:10px; }
+  .placement-card strong{ display:block; font-size:18px; margin-bottom:18px; }
   .placement-card span{ color:#dfeef1; font-size:14px; line-height:1.7; }
   .mini-stats{ display:grid; grid-template-columns: repeat(3,1fr); gap:18px; margin-top:30px; }
   .mini-stats div{ background:linear-gradient(180deg,#f6fbfb,#edf7f7); border:1px solid var(--line); padding:18px 16px; }
@@ -510,7 +547,7 @@
   .mini-stats span{ display:block; color:var(--muted); font-size:13px; margin-top:8px; }
   .contact-box{ border:1px solid var(--line); padding:28px; background:var(--mist); }
   .contact-box > div{ padding:12px 0; border-bottom:1px solid var(--line); }
-  .contact-box span{ display:block; font-size:12px; font-weight:800; letter-spacing:.08em; color:var(--teal); margin-bottom:7px; }
+  .contact-box span{ display:block; font-size:12px; font-weight:800; letter-spacing:.08em; color:var(--teal); margin-bottom:14px; }
   .contact-box p{ color:var(--navy); font-size:16px; line-height:1.6; }
   .enquiry-form-section{ background:linear-gradient(180deg, #f8fbfc 0%, #ffffff 100%); }
   .enquiry-form{ background:#fff; border:1px solid var(--line); padding:28px; box-shadow:0 18px 45px rgba(8,26,52,0.06); }
