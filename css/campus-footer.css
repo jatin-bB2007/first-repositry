@@ -1,6 +1,6 @@
 .gibs-footer {
 	position: relative;
-	padding: 68px 0 22px;
+	padding: 84px 0 22px;
 	color: rgba(255,255,255,.78);
 	background: #081A34;
 	overflow: hidden;
@@ -15,11 +15,11 @@
 .gibs-footer > .wrap {
 	position: relative;
 	z-index: 1;
-	width: min(1180px, calc(100% - 64px));
+	width: min(1450px, calc(100% - 64px));
 	margin: 0 auto;
 	padding: 0;
 }
-.gibs-footer-grid { display: grid; grid-template-columns: 1.35fr .8fr .95fr 1.15fr; gap: 42px; padding-bottom: 52px; }
+.gibs-footer-grid { display: grid; grid-template-columns: 1.25fr .75fr .95fr 1.1fr; gap: 54px; padding-bottom: 64px; }
 .gibs-footer-brand { display: inline-flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; }
 .gibs-footer-mark { display: grid; width: 46px; height: 46px; place-items: center; color: #081A34; background: #5EE6D6; clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); font-family: 'Poppins', sans-serif; font-weight: 900; }
 .gibs-footer-brand strong { display: block; font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 1.1; }
@@ -54,14 +54,46 @@
 .gibs-footer-button:hover { transform: translateY(-2px); }
 .gibs-footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.55); font-size: 12px; }
 .gibs-footer-bottom a { color: #5EE6D6; text-decoration: none; }
+.soil-reference-footer,.reference-footer { padding-bottom: 84px; }
+.soil-reference-footer .gibs-footer-grid,.reference-footer .gibs-footer-grid { grid-template-columns: 1.3fr .8fr .95fr 1.1fr; gap: 60px; padding-bottom: 64px; border-bottom: 1px solid rgba(255,255,255,.13); }
+.soil-reference-footer .gibs-footer-mark,.reference-footer .gibs-footer-mark { width: 58px; height: 58px; }
+.soil-reference-footer .gibs-footer-brand strong,.reference-footer .gibs-footer-brand strong { font-size: 22px; }
+.soil-reference-footer .gibs-footer-brand span,.reference-footer .gibs-footer-brand span { font-size: 12px; }
+.soil-reference-footer .gibs-footer-intro,.reference-footer .gibs-footer-intro { max-width: 34ch; margin-top: 24px; font-size: 17px; line-height: 1.85; }
+.soil-reference-footer .gibs-footer-heading,.reference-footer .gibs-footer-heading { margin-bottom: 22px; font-size: 14px; }
+.soil-reference-footer .gibs-footer-links,.reference-footer .gibs-footer-links { gap: 14px; }
+.soil-reference-footer .gibs-footer-links a,.reference-footer .gibs-footer-links a { font-size: 16px; }
+.soil-reference-footer .gibs-footer-cta,.reference-footer .gibs-footer-cta { padding: 30px; }
+.soil-reference-footer .gibs-footer-cta h3,.reference-footer .gibs-footer-cta h3 { font-size: 25px; }
+.soil-reference-footer .gibs-footer-cta p,.reference-footer .gibs-footer-cta p { font-size: 16px; }
+.soil-reference-footer .gibs-footer-button,.reference-footer .gibs-footer-button { min-height: 68px; font-size: 16px; }
+.reference-footer { padding: 105px 0 78px; }
+.reference-footer > .wrap { width: min(1804px, calc(100% - 88px)); }
+.reference-footer .gibs-footer-grid { grid-template-columns: 1.4fr .9fr 1fr 1fr; gap: 48px; padding-bottom: 0; border: 0; }
+.reference-footer .gibs-footer-mark { width: 73px; height: 73px; font-size: 20px; }
+.reference-footer .gibs-footer-brand { gap: 15px; }
+.reference-footer .gibs-footer-brand strong { font-size: 28px; }
+.reference-footer .gibs-footer-intro { max-width: 38ch; margin-top: 29px; }
+.reference-footer .gibs-footer-heading { font-size: 16px; }
+.reference-footer .gibs-footer-links a { font-size: 18px; }
+.reference-footer .gibs-footer-grid > div:not(:first-child):not(.gibs-footer-cta) { padding-top: 15px; }
+.reference-footer .gibs-footer-cta { padding: 36px 37px; border-radius: 17px; }
+.reference-footer .gibs-footer-cta h3 { font-size: 30px; line-height: 1.28; }
+.reference-footer .gibs-footer-button { min-height: 86px; margin-top: 42px; }
+.reference-footer .gibs-footer-bottom { display: none; }
 
 @media (max-width: 900px) {
 	.gibs-footer-grid { grid-template-columns: 1fr 1fr; gap: 34px 22px; padding-bottom: 36px; }
+	.soil-reference-footer .gibs-footer-grid,.reference-footer .gibs-footer-grid { grid-template-columns: 1fr 1fr; gap: 34px 28px; }
+	.reference-footer { padding: 70px 0; }
+	.reference-footer > .wrap { width: min(100% - 48px, 1450px); }
 }
 
 @media (max-width: 560px) {
-	.gibs-footer > .wrap { width: min(100% - 40px, 1180px); }
+	.gibs-footer > .wrap { width: min(100% - 40px, 1450px); }
 	.gibs-footer { padding-top: 48px; }
 	.gibs-footer-grid { grid-template-columns: 1fr; gap: 28px; }
 	.gibs-footer-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
+	.soil-reference-footer,.reference-footer { padding-bottom: 48px; }
+	.soil-reference-footer .gibs-footer-grid,.reference-footer .gibs-footer-grid { grid-template-columns: 1fr; gap: 28px; padding-bottom: 34px; }
 }
