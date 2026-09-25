@@ -1,0 +1,296 @@
+:root{--rit-ink:#18231f;--rit-dark:#12382f;--rit-deep:#0c2923;--rit-teal:#96e5c1;--rit-pale:#f3f4ee;--rit-line:#d7ded7;--rit-muted:#66736c;--rit-orange:#f49d62}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{color:var(--rit-ink);background:#fff;font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input,select{font:inherit}.rit-wrap{width:min(1180px,calc(100% - 64px));margin:0 auto}.rit-header{position:sticky;top:0;z-index:10;padding:15px 0;background:rgba(12,41,35,.96);box-shadow:0 5px 20px rgba(0,0,0,.08)}.rit-header-inner{display:flex;align-items:center;justify-content:space-between;gap:28px}.rit-brand{display:flex;align-items:center;gap:10px;color:#fff}.rit-brand-mark{display:grid;width:39px;height:39px;place-items:center;border-radius:50%;color:var(--rit-deep);background:var(--rit-teal);font:800 21px 'Manrope',sans-serif}.rit-brand strong{display:block;font:800 17px 'Manrope',sans-serif;line-height:1}.rit-brand small{display:block;margin-top:4px;color:#b9cec5;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.rit-nav{display:flex;gap:27px;color:#d5e1dc;font-size:13px}.rit-nav a:hover{color:var(--rit-teal)}.rit-header-cta,.rit-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:50px;padding:0 23px;border:0;border-radius:3px;font-weight:700}.rit-header-cta{color:var(--rit-deep);background:var(--rit-teal);font-size:13px}.rit-header-cta span,.rit-button span{font-size:18px}.rit-hero{overflow:hidden;color:#fff;background:var(--rit-deep)}.rit-hero-grid{display:grid;grid-template-columns:1fr .92fr;gap:70px;align-items:center;min-height:650px;padding:76px 0}.rit-kicker{color:var(--rit-teal);font-size:11px;font-weight:700;letter-spacing:.18em}.rit-kicker-dark{color:#5b796c}.rit-hero h1,h2{font:800 clamp(38px,5.2vw,72px)/1.02 'Manrope',sans-serif;letter-spacing:-.045em}.rit-hero h1{max-width:640px;margin-top:23px}.rit-hero h1 em,h2 em{color:var(--rit-teal);font-style:normal}.rit-hero-text{max-width:500px;margin-top:24px;color:#c3d0ca;font-size:17px;line-height:1.75}.rit-actions{display:flex;align-items:center;gap:25px;margin-top:34px}.rit-button-accent{color:var(--rit-deep);background:var(--rit-teal)}.rit-button-dark{color:#fff;background:var(--rit-deep)}.rit-text-link{color:#fff;font-size:14px;font-weight:700}.rit-text-link span{margin-left:8px;color:var(--rit-teal);font-size:19px}.rit-hero-note{display:flex;align-items:center;gap:10px;margin-top:56px;color:#aebeb6;font-size:12px}.rit-live-dot{width:8px;height:8px;border-radius:50%;background:#f49d62;box-shadow:0 0 0 5px rgba(244,157,98,.15)}.rit-hero-visual{position:relative}.rit-image-frame{position:relative;aspect-ratio:.9;overflow:hidden;border-radius:190px 190px 5px 5px}.rit-image-frame img{width:100%;height:100%;object-fit:cover;filter:saturate(.8)}.rit-image-frame:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,35,29,.54),transparent 60%)}.rit-image-label{position:absolute;right:24px;bottom:24px;z-index:1;color:#fff;font-size:12px;letter-spacing:.1em;text-transform:uppercase}.rit-stat-float{position:absolute;right:-28px;bottom:34px;display:flex;align-items:center;gap:14px;padding:18px 20px;color:var(--rit-deep);background:var(--rit-teal);box-shadow:0 16px 30px rgba(0,0,0,.2)}.rit-stat-float strong{font:800 31px 'Manrope',sans-serif}.rit-stat-float span{font-size:11px;line-height:1.4}.rit-proof{background:var(--rit-teal)}.rit-proof-grid{display:grid;grid-template-columns:repeat(3,1fr) 1.3fr;gap:0}.rit-proof-grid>div{display:flex;align-items:center;gap:14px;min-height:116px;padding:22px;border-right:1px solid rgba(12,41,35,.16)}.rit-proof strong{font:800 25px 'Manrope',sans-serif}.rit-proof span{font-size:12px;line-height:1.35}.rit-proof-caption{justify-content:flex-end!important;text-align:right;font:800 17px/1.2 'Manrope',sans-serif}.rit-proof-caption span{font-size:25px}.rit-section{padding:110px 0}.rit-programmes,.rit-facilities,.rit-testimonials{background:var(--rit-pale)}.rit-section-intro{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:end}.rit-section-intro h2,.rit-section-heading h2,.rit-split h2{margin-top:15px}.rit-section-intro>p:last-child,.rit-muted-copy{max-width:450px;color:var(--rit-muted);font-size:16px;line-height:1.8}.rit-programme-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:55px}.rit-programme-card{position:relative;min-height:360px;padding:36px;background:#fff;overflow:hidden}.rit-programme-featured{color:#fff;background:var(--rit-deep)}.rit-card-number{font-size:11px;font-weight:700;letter-spacing:.15em}.rit-programme-card h3{max-width:360px;margin-top:54px;font:800 30px/1.12 'Manrope',sans-serif}.rit-programme-card p{max-width:330px;margin-top:14px;color:var(--rit-muted);line-height:1.65}.rit-programme-featured p{color:#bdcbc5}.rit-programme-card a{position:absolute;bottom:35px;left:36px;font-size:13px;font-weight:700}.rit-programme-card a span{margin-left:9px;color:#f49d62;font-size:18px}.rit-card-art{position:absolute;right:-18px;bottom:15px;color:rgba(150,229,193,.12);font:800 90px 'Manrope',sans-serif;transform:rotate(-12deg)}.rit-card-art-light{color:#e7eee7}.rit-split{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.rit-fee-panel{padding:34px;background:var(--rit-pale);border-top:5px solid var(--rit-orange)}.rit-fee-main{padding-bottom:26px;border-bottom:1px solid var(--rit-line)}.rit-fee-main span,.rit-fee-main small{display:block;color:var(--rit-muted);font-size:13px}.rit-fee-main strong{display:block;margin:9px 0 4px;font:800 53px 'Manrope',sans-serif;color:var(--rit-deep)}.rit-fee-row{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--rit-line);font-size:14px}.rit-fee-row strong{color:var(--rit-deep)}.rit-fee-foot{padding-top:20px;color:var(--rit-muted);font-size:12px}.rit-eligibility{background:#fff}.rit-section-heading{max-width:590px}.rit-section-heading h2 em,.rit-campus-copy h2 em{color:var(--rit-orange)}.rit-eligibility-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:58px}.rit-eligibility-card{padding:27px;border-top:2px solid var(--rit-teal);background:var(--rit-pale)}.rit-eligibility-card span{color:#7b9187;font-size:12px;font-weight:700}.rit-eligibility-card h3{margin-top:37px;font:800 20px 'Manrope',sans-serif}.rit-eligibility-card p{margin-top:12px;color:var(--rit-muted);font-size:14px;line-height:1.7}.rit-process{color:#fff;background:var(--rit-deep)}.rit-process-line{display:grid;grid-template-columns:repeat(3,1fr);gap:45px;margin-top:62px}.rit-process-line>div{position:relative}.rit-process-line>div:not(:last-child):after{content:'→';position:absolute;top:0;right:-28px;color:#59786c;font-size:25px}.rit-process-line b{display:grid;width:42px;height:42px;place-items:center;border-radius:50%;color:var(--rit-deep);background:var(--rit-teal);font:800 16px 'Manrope',sans-serif}.rit-process-line h3{margin-top:27px;font:800 20px 'Manrope',sans-serif}.rit-process-line p{margin-top:12px;color:#b9c9c1;font-size:14px;line-height:1.7}.rit-campus{background:var(--rit-pale)}.rit-campus-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.rit-campus-image{position:relative;aspect-ratio:1.1;overflow:hidden}.rit-campus-image img{width:100%;height:100%;object-fit:cover}.rit-campus-image:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,41,35,.72),transparent 60%)}.rit-campus-image span{position:absolute;bottom:23px;left:24px;z-index:1;color:#fff;font-size:12px}.rit-campus-copy>p:nth-of-type(2){max-width:440px;margin-top:22px;color:var(--rit-muted);font-size:16px;line-height:1.8}.rit-mini-stats{display:flex;gap:34px;margin-top:42px}.rit-mini-stats div{display:flex;align-items:center;gap:10px}.rit-mini-stats strong{font:800 26px 'Manrope',sans-serif}.rit-mini-stats span{color:var(--rit-muted);font-size:11px;line-height:1.3}.rit-facility-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:16px;margin-top:54px}.rit-facility{min-height:280px;padding:28px;background:var(--rit-deep);color:#fff}.rit-facility span{font-size:11px;color:var(--rit-teal);font-weight:700}.rit-facility h3{margin-top:115px;font:800 24px 'Manrope',sans-serif}.rit-facility p{margin-top:9px;color:#bfd0c7;font-size:13px;line-height:1.55}.rit-facility-teal{color:var(--rit-deep);background:var(--rit-teal)}.rit-facility-teal span{color:var(--rit-deep)}.rit-facility-teal p{color:#385b4e}.rit-facility-photo{background:linear-gradient(0deg,rgba(12,41,35,.9),rgba(12,41,35,.1)),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80') center/cover}.rit-placement-split{grid-template-columns:.82fr 1.18fr}.rit-placement-board{padding:45px;color:#fff;background:var(--rit-deep)}.rit-placement-board span{color:var(--rit-teal);font-size:12px}.rit-placement-board strong{display:block;margin-top:13px;font:800 75px/1 'Manrope',sans-serif}.rit-placement-board small{display:block;color:#bed0c5;font-size:13px}.rit-company-row{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-top:70px;padding-top:18px;border-top:1px solid #365349;color:#b5c7bd;font-size:10px}.rit-company-row b{color:#fff;font-size:11px;letter-spacing:.08em}.rit-quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:52px}.rit-quote-grid blockquote{padding:34px;background:#fff}.rit-quote-mark{color:#f49d62;font:800 52px 'Manrope',sans-serif;line-height:.7}.rit-quote-grid blockquote p{min-height:100px;margin-top:18px;font:700 21px/1.4 'Manrope',sans-serif}.rit-quote-grid footer{display:flex;flex-direction:column;gap:4px;margin-top:25px;padding-top:17px;border-top:1px solid var(--rit-line);font-size:12px}.rit-quote-grid footer span{color:var(--rit-muted)}.rit-faq{background:var(--rit-pale)}.rit-text-link-dark{display:inline-block;margin-top:30px;color:var(--rit-deep)}.rit-faq-list details{padding:21px 0;border-bottom:1px solid var(--rit-line)}.rit-faq-list summary{cursor:pointer;list-style:none;font:700 17px 'Manrope',sans-serif}.rit-faq-list summary::-webkit-details-marker{display:none}.rit-faq-list summary:after{content:'+';float:right;color:#f49d62;font-size:23px}.rit-faq-list details[open] summary:after{content:'−'}.rit-faq-list details p{max-width:500px;margin-top:14px;color:var(--rit-muted);font-size:14px;line-height:1.7}.rit-counselling{color:#fff;background:var(--rit-deep)}.rit-counselling-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:100px}.rit-counselling h2{margin-top:16px}.rit-counselling p{max-width:430px;margin-top:23px;color:#bfd0c7;font-size:16px;line-height:1.75}.rit-contact-line{display:flex;flex-direction:column;gap:7px;margin-top:40px;padding-top:17px;border-top:1px solid #365349}.rit-contact-line span{color:var(--rit-teal);font-size:11px;text-transform:uppercase;letter-spacing:.12em}.rit-contact-line a{font:700 19px 'Manrope',sans-serif}.rit-form{display:grid;grid-template-columns:1fr 1fr;gap:20px}.rit-form label{display:flex;flex-direction:column;gap:9px}.rit-form label span{color:#c2d0c8;font-size:12px}.rit-form input,.rit-form select{height:50px;padding:0 14px;border:1px solid #456158;border-radius:2px;outline:none;color:#fff;background:#173e34}.rit-form input::placeholder{color:#92aaa0}.rit-form input:focus,.rit-form select:focus{border-color:var(--rit-teal)}.rit-form select{color:#b8c9c0}.rit-form .rit-button{grid-column:1/-1;justify-self:start;margin-top:5px}.rit-form-note{grid-column:1/-1;color:#8fa99d;font-size:11px}.rit-footer{padding:62px 0 20px;color:#c1d0c8;background:#091f1b}.rit-footer-grid{display:grid;grid-template-columns:1.5fr .7fr 1fr;gap:60px;padding-bottom:55px}.rit-brand-footer{display:inline-flex}.rit-footer p{max-width:300px;margin-top:19px;font-size:13px;line-height:1.7}.rit-footer h3{margin-bottom:17px;color:var(--rit-teal);font-size:11px;letter-spacing:.14em;text-transform:uppercase}.rit-footer-grid>div>a:not(.rit-brand),.rit-footer-grid>div>span{display:block;margin-top:10px;color:#c1d0c8;font-size:13px}.rit-footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:18px;border-top:1px solid #29483f;color:#789187;font-size:11px}.rit-footer-bottom a{color:var(--rit-teal)}
+@media (max-width:900px){.rit-nav{gap:13px}.rit-hero-grid,.rit-split,.rit-campus-grid,.rit-counselling-grid{grid-template-columns:1fr;gap:45px}.rit-hero-grid{padding:60px 0}.rit-hero-visual{max-width:520px}.rit-proof-grid{grid-template-columns:repeat(2,1fr)}.rit-proof-caption{display:none!important}.rit-section-intro{grid-template-columns:1fr;gap:12px}.rit-programme-grid,.rit-facility-grid{grid-template-columns:1fr 1fr}.rit-programme-featured{grid-column:1/-1}.rit-eligibility-grid,.rit-process-line{gap:18px}.rit-placement-split{grid-template-columns:1fr}.rit-footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.rit-wrap{width:min(100% - 40px,1180px)}.rit-header{position:relative}.rit-nav{order:3;width:100%;overflow:auto;justify-content:flex-start}.rit-header-inner{flex-wrap:wrap;gap:16px}.rit-header-cta{margin-left:auto}.rit-hero h1{font-size:43px}.rit-hero-text{font-size:15px}.rit-actions{align-items:flex-start;flex-direction:column;gap:18px}.rit-image-frame{border-radius:110px 110px 4px 4px}.rit-stat-float{right:-8px;bottom:18px}.rit-proof-grid{grid-template-columns:1fr 1fr}.rit-proof-grid>div{min-height:96px;padding:15px 9px}.rit-proof strong{font-size:20px}.rit-proof span{font-size:10px}.rit-section{padding:72px 0}.rit-section-intro h2,.rit-section-heading h2,.rit-split h2{font-size:40px}.rit-programme-grid,.rit-facility-grid,.rit-eligibility-grid,.rit-quote-grid{grid-template-columns:1fr}.rit-programme-featured{grid-column:auto}.rit-programme-card{min-height:320px}.rit-process-line{grid-template-columns:1fr;gap:34px}.rit-process-line>div:not(:last-child):after{content:'↓';top:auto;right:auto;bottom:-28px;left:5px}.rit-mini-stats{gap:15px}.rit-mini-stats strong{font-size:21px}.rit-mini-stats span{font-size:9px}.rit-facility-large{min-height:260px}.rit-facility h3{margin-top:80px}.rit-company-row{gap:12px;margin-top:45px}.rit-form{grid-template-columns:1fr}.rit-form .rit-button,.rit-form-note{grid-column:auto}.rit-footer-grid{grid-template-columns:1fr;gap:32px}.rit-footer-bottom{align-items:flex-start;flex-direction:column}.rit-counselling-grid{gap:40px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Keep every section in one clear reading rhythm. */
+.rit-section{position:relative;scroll-margin-top:76px}
+.rit-section-intro{display:block;max-width:780px}
+.rit-section-intro h2{max-width:620px;margin-top:14px;color:var(--rit-deep)}
+.rit-section-intro>p:last-child{max-width:620px;margin-top:22px}
+.rit-section-heading h2{max-width:650px;color:var(--rit-deep)}
+.rit-process .rit-section-heading h2,.rit-counselling h2{color:#fff}
+.rit-programme-card,.rit-eligibility-card,.rit-quote-grid blockquote{box-shadow:0 12px 30px rgba(12,41,35,.07)}
+.rit-programme-card,.rit-eligibility-card,.rit-quote-grid blockquote,.rit-fee-panel{border:1px solid rgba(18,56,47,.09)}
+.rit-programme-featured{border-color:transparent}
+.rit-programme-card,.rit-eligibility-card,.rit-quote-grid blockquote{box-shadow:0 12px 30px rgba(12,41,35,.07)}
+.rit-programme-card,.rit-eligibility-card,.rit-quote-grid blockquote,.rit-fee-panel{border:1px solid rgba(18,56,47,.09)}
+.rit-programme-featured{border-color:transparent}
+.rit-programme-card,.rit-programme-featured{background:var(--rit-ink);color:#fff}
+.rit-programme-card h3,.rit-programme-card p,.rit-programme-card a,
+.rit-programme-featured h3,.rit-programme-featured p,.rit-programme-featured a,
+.rit-programme-card .rit-card-number,.rit-programme-featured .rit-card-number{color:#fff}
+.rit-programme-card .rit-card-number,.rit-programme-featured .rit-card-number{color:var(--rit-teal)}
+.rit-card-number,.rit-eligibility-card > span,.rit-process-line b{color:var(--rit-orange)}
+.rit-programme-grid,.rit-eligibility-grid,.rit-facility-grid,.rit-quote-grid{margin-top:48px}
+.rit-section-intro+.rit-programme-grid{margin-top:44px}
+.rit-section-heading+.rit-process-line{margin-top:48px}
+.rit-section-heading+.rit-eligibility-grid{margin-top:48px}
+.rit-section-heading+.rit-quote-grid{margin-top:44px}
+.rit-facilities .rit-section-intro>p:last-child{max-width:500px}
+
+/* RIIM visual system for the RIT page */
+:root {
+	--rit-ink: #102a43;
+	--rit-dark: #102a43;
+	--rit-deep: #102a43;
+	--rit-teal: #39c6b2;
+	--rit-pale: #f4f0e9;
+	--rit-line: #d8ddd8;
+	--rit-muted: #617080;
+	--rit-orange: #f07b50;
+}
+
+body { background: #fffdf8; color: var(--rit-ink); }
+.rit-hero { background: var(--rit-ink); }
+.rit-kicker { color: var(--rit-teal); }
+.rit-kicker-dark { color: var(--rit-orange); }
+.rit-hero h1, h2 { font-family: "Space Grotesk", sans-serif; }
+.rit-hero h1 em, h2 em { color: var(--rit-teal); }
+.rit-button-accent, .rit-header-cta { color: var(--rit-ink); background: var(--rit-teal); }
+.rit-button-dark { color: #fff; background: var(--rit-ink); }
+.rit-text-link-dark, .rit-programme-card a, .rit-text-link { color: var(--rit-orange); }
+.rit-proof, .rit-fees, .rit-campus, .rit-testimonials, .rit-faq { background: var(--rit-pale); }
+.rit-section { border-color: var(--rit-line); }
+.rit-programme-card, .rit-eligibility-card, .rit-quote-grid blockquote, .rit-fee-panel { border-color: var(--rit-line); box-shadow: 0 12px 30px rgba(16,42,67,.07); }
+.rit-programme-card, .rit-programme-featured { background: var(--rit-ink); color: #fff; }
+.rit-programme-card h3, .rit-programme-card p, .rit-programme-card a,
+.rit-programme-featured h3, .rit-programme-featured p, .rit-programme-featured a,
+.rit-programme-card .rit-card-number, .rit-programme-featured .rit-card-number { color: #fff; }
+.rit-programme-card .rit-card-number, .rit-programme-featured .rit-card-number { color: var(--rit-teal); }
+.rit-card-number, .rit-eligibility-card > span, .rit-process-line b { color: var(--rit-orange); }
+.rit-fee-panel, .rit-eligibility-card, .rit-quote-grid blockquote { background: #fffdf8; }
+.rit-muted-copy, .rit-section-intro > p:last-child, .rit-eligibility-card p, .rit-quote-grid blockquote p { color: var(--rit-muted); }
+.rit-facility-teal { background: var(--rit-teal); color: var(--rit-ink); }
+.rit-facility-photo { background-color: var(--rit-orange); }
+.rit-counselling { color: #fff; }
+.rit-form { background: #fffdf8; border-color: var(--rit-line); }
+.rit-form label span, .rit-form-note { color: var(--rit-muted); }
+.rit-form input, .rit-form select { border-color: var(--rit-line); color: var(--rit-ink); background: #fff; }
+.rit-footer { background: var(--rit-ink); }
+
+/* Photo backgrounds for the three campus experience cards */
+.rit-facility {
+	position: relative;
+	isolation: isolate;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+.rit-facility::before {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	content: "";
+	background: linear-gradient(0deg, rgba(8, 25, 39, .86), rgba(8, 25, 39, .25));
+}
+.rit-facility > * { position: relative; }
+.rit-facility-large { background-image: url("../../images/rit-img-2.jpg"); }
+.rit-facility-teal { background-image: url("../../images/rit-img-3.png"); }
+.rit-facility-photo { background-image: url("../../images/rit-img-4.png"); }
+.rit-facility p { color: rgba(255, 255, 255, .88); }
+.rit-facility span { color: var(--rit-teal); }
+
+/* Keep the RIT experience copy to the right of its campus photo */
+.rit-campus-grid {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: center;
+	gap: 64px;
+	margin-top: 0;
+	border-radius: 0;
+	overflow: visible;
+}
+
+/* Keep the campus copy in the right column, separate from the feature-card grid. */
+.rit-section.rit-campus .rit-wrap.rit-campus-grid {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: center;
+	gap: 64px;
+	margin-top: 0;
+	border-radius: 0;
+	overflow: visible;
+}
+.rit-campus-copy { min-width: 0; }
+.rit-campus-copy h2 {
+	max-width: 600px;
+	font-size: clamp(42px, 4.2vw, 64px);
+	line-height: 1.05;
+}
+@media (max-width: 900px) {
+	.rit-section.rit-campus .rit-wrap.rit-campus-grid {
+		grid-template-columns: 1fr;
+		gap: 36px;
+	}
+}
+.rit-campus-image { min-width: 0; }
+.rit-campus-copy { min-width: 0; }
+@media (max-width: 900px) {
+	.rit-campus-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+
+.rit-campus {
+  background: #f3f1ed;
+  padding: 0 0 0;
+}
+
+.rit-campus .rit-wrap {
+  width: min(1280px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 30px 0 0;
+}
+
+.rit-campus-hero {
+  padding: 10px 0 36px;
+}
+
+.rit-campus-hero h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(68px, 8vw, 210px);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  color: var(--rit-dark);
+  margin: 0;
+}
+
+.rit-campus-hero h2 span {
+  display: block;
+  color: var(--rit-teal);
+}
+
+.rit-campus-hero p {
+  max-width: 960px;
+  margin-top: 24px;
+  font-size: clamp(20px, 2vw, 36px);
+  line-height: 1.3;
+  color: rgba(18, 56, 47, 0.9);
+}
+
+.rit-campus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 26px;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.rit-campus-card {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 26px 26px 30px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.rit-campus-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+
+.rit-campus-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(11, 29, 39, 0.18);
+}
+
+.rit-campus-card--dark::before {
+  background-image: linear-gradient(180deg, rgba(11, 29, 39, 0.12), rgba(11, 29, 39, 0.42)), url("../../images/rit-img-2.jpg");
+}
+
+.rit-campus-card--teal::before {
+  background-image: linear-gradient(180deg, rgba(14, 122, 116, 0.08), rgba(14, 122, 116, 0.22)), url("../../images/rit-img-3.jpg");
+}
+
+.rit-campus-card--warm::before {
+  background-image: linear-gradient(180deg, rgba(118, 67, 40, 0.08), rgba(118, 67, 40, 0.34)), url("../../images/rit-img-4.png");
+}
+
+.rit-campus-feature-number,
+.rit-campus-feature-card {
+  position: relative;
+  z-index: 2;
+}
+
+.rit-campus-feature-number {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(24px, 2.2vw, 34px);
+  font-weight: 700;
+  color: rgba(64, 181, 171, 0.95);
+  margin: 0 0 180px;
+}
+
+.rit-campus-feature-card {
+  max-width: 100%;
+}
+
+.rit-campus-feature-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(34px, 2.8vw, 58px);
+  line-height: 0.98;
+  color: #fff;
+  letter-spacing: -0.06em;
+  margin-bottom: 18px;
+}
+
+.rit-campus-feature-card p {
+  font-size: clamp(16px, 1.6vw, 28px);
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 410px;
+}
+
+@media (max-width: 900px) {
+  .rit-campus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rit-campus-card {
+    min-height: 420px;
+  }
+
+  .rit-campus-feature-number {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 560px) {
+  .rit-campus .rit-wrap {
+    width: min(100% - 30px, 1280px);
+  }
+
+  .rit-campus-hero h2 {
+    font-size: clamp(52px, 18vw, 110px);
+  }
+
+  .rit-campus-hero p {
+    font-size: 18px;
+  }
+
+  .rit-campus-card {
+    min-height: 370px;
+    padding: 18px 18px 22px;
+  }
+
+  .rit-campus-feature-number {
+    margin-bottom: 90px;
+  }
+
+  .rit-campus-feature-card h3 {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+
+  .rit-campus-feature-card p {
+    font-size: 18px;
+  }
+}
