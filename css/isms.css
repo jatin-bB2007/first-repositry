@@ -134,7 +134,7 @@ select.field { appearance: none; padding-right: 38px; background: #fff url("data
 .isms-campus-update { padding: 0 0 72px; background: #fff; }
 .isms-campus-update-card { padding: 34px 40px; border: 1px solid #d7e9e8; border-left: 6px solid var(--teal); border-radius: 9px; background: linear-gradient(110deg, #f0fbfa 0%, #fffaf0 100%); }
 .isms-campus-update-heading { display: flex; align-items: center; gap: 12px; }
-.isms-campus-update-heading span { color: var(--navy-deep); font-size: 30px; }
+.isms-campus-update-heading span { color: #16a34a; font-size: 30px; }
 .isms-campus-update h2 { color: var(--navy-deep); font-family: 'Poppins', sans-serif; font-size: clamp(25px, 3vw, 35px); line-height: 1.2; }
 .isms-campus-update p { margin-top: 17px; color: var(--ink); font-size: 16px; line-height: 2; }
 .isms-campus-showcase { padding: 0 0 76px; background: #fff; }
