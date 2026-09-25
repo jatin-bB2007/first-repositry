@@ -282,6 +282,11 @@ select:focus {
     text-align: center;
 }
 
+.section-heading span {
+    font-size: 14px;
+    font-weight: 900;
+}
+
 .section-heading.left {
     text-align: left;
     margin-left: 0;

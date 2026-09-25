@@ -148,6 +148,29 @@ nav a:hover {
     color: #1da9aa;
 }
 
+.admission-heading {
+    display: grid;
+    gap: 12px;
+}
+
+.admission-heading > span {
+    color: #0C2340;
+}
+
+.admission-heading em {
+    display: block;
+    max-width: 520px;
+    padding-left: 16px;
+    border-left: 4px solid #1da9aa;
+    color: #1ca9c9;
+    font-family: Poppins, Arial, sans-serif;
+    font-size: clamp(19px, 2.1vw, 27px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
 .line {
     width: 42px;
     height: 3px;
@@ -373,7 +396,7 @@ nav a:hover {
 }
 
 .specialization p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.4;
     font-weight: 600;
 }
@@ -401,7 +424,7 @@ nav a:hover {
 }
 
 .features div {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -559,6 +582,57 @@ nav a:hover {
     color: #1aa8a8;
 }
 
+.process-section .heading-small.alt {
+    font-size: clamp(20px, 2.4vw, 28px);
+    font-weight: 900;
+    letter-spacing: 2.5px;
+}
+
+.eligibility-section .heading-small.alt {
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 900;
+    letter-spacing: 2.5px;
+}
+
+.campus-life .heading-small.alt {
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 900;
+    letter-spacing: 2.5px;
+}
+
+.faq-section .heading-small.alt {
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 900;
+    letter-spacing: 2.5px;
+}
+
+.why-iibs .heading-small.alt {
+    color: #367588;
+    font-size: clamp(16px, 2vw, 22px);
+    letter-spacing: 2.5px;
+}
+
+.why-iibs h2 {
+    font-size: clamp(28px, 3.6vw, 42px);
+}
+
+.program-overview .heading-small.alt {
+    font-size: clamp(15px, 1.8vw, 20px);
+}
+
+.program-overview h2 {
+    font-size: clamp(27px, 3.5vw, 40px);
+}
+
+.admission .heading-small {
+    font-size: clamp(15px, 1.8vw, 20px);
+}
+
+.overview-card h3,
+.overview-card p {
+    color: #002244;
+}
+
 .feature-grid,
 .overview-grid,
 .campus-grid,
@@ -578,6 +652,11 @@ nav a:hover {
 
 .campus-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.placements-section .heading-small.alt {
+    font-size: clamp(15px, 1.8vw, 20px);
+    font-weight: 700;
 }
 
 .placement-grid {
@@ -653,6 +732,15 @@ nav a:hover {
     margin-bottom: 12px;
     position: relative;
     padding-left: 20px;
+}
+
+.eligibility-section .info-panel:first-child h3 {
+    font-size: 26px;
+}
+
+.eligibility-section .info-panel:first-child li {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .info-panel li::before {
@@ -922,6 +1010,10 @@ footer {
 
     .specialization {
         min-height: 100px;
+    }
+
+    .specialization p {
+        font-size: 14px;
     }
 
     .blue-bottom {
