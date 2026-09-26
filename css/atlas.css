@@ -129,6 +129,16 @@
     color: transparent;
   }
 
+  .application-note{
+    max-width: 47ch;
+    margin-top: 18px;
+    padding-left: 14px;
+    border-left: 3px solid var(--teal);
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
   .program-line{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;

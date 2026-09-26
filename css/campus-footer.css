@@ -25,7 +25,7 @@
 .gibs-footer-brand strong { display: block; font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 1.1; }
 .gibs-footer-brand span { display: block; margin-top: 4px; color: rgba(255,255,255,.6); font-size: 10px; letter-spacing: .14em; }
 .gibs-footer-intro { max-width: 32ch; margin-top: 20px; font-size: 14px; line-height: 1.8; }
-.gibs-footer-heading { margin-bottom: 17px; color: #5EE6D6; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.gibs-footer-heading { margin-bottom: 17px; color: #5EE6D6; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
 .gibs-footer-links { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
 .gibs-footer-links a { color: rgba(255,255,255,.78); font-size: 14px; text-decoration: none; transition: color .2s ease, transform .2s ease; }
 .gibs-footer-links a:hover { color: #5EE6D6; transform: translateX(3px); }
@@ -81,6 +81,7 @@
 .reference-footer .gibs-footer-cta h3 { font-size: 30px; line-height: 1.28; }
 .reference-footer .gibs-footer-button { min-height: 86px; margin-top: 42px; }
 .reference-footer .gibs-footer-bottom { display: none; }
+.gibs-footer-bottom a { color: #5EE6D6; font-size: 15px; font-weight: 700; text-decoration: none; }
 
 @media (max-width: 900px) {
 	.gibs-footer-grid { grid-template-columns: 1fr 1fr; gap: 34px 22px; padding-bottom: 36px; }
