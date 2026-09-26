@@ -34,9 +34,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background: var(--dbs-bg);
-  color: var(--dbs-text);
+  font-family: "DM Sans", sans-serif;
+  background: var(--riim-white);
+  color: var(--riim-ink);
   line-height: 1.6;
 }
 
@@ -713,27 +713,21 @@ p {
 
 /* DBS RIIM-layout refinement */
 :root {
-  --riim-ink: #172536;
-  --riim-teal: #d7a84b;
-  --riim-orange: #b87929;
-  --riim-paper: #f3f1ed;
-  --riim-white: #fcfbf8;
-  --riim-muted: #66717d;
-  --riim-line: #d9dde1;
+  --riim-ink: #102a43;
+  --riim-teal: #39c6b2;
+  --riim-orange: #f07b50;
+  --riim-paper: #f4f0e9;
+  --riim-white: #fffdf8;
+  --riim-muted: #617080;
+  --riim-line: #d8ddd8;
 }
 
-.campus-header { background: linear-gradient(100deg, rgba(23, 37, 54, .98), rgba(31, 48, 67, .96) 56%, rgba(142, 101, 38, .82)); }
-.campus-brand-mark, .campus-nav a[aria-current="page"] { color: var(--riim-ink); background: var(--riim-teal); }
-.campus-header-action { color: var(--riim-teal); border-color: rgba(215, 168, 75, .62); }
-.campus-header-action:hover { color: var(--riim-ink); background: var(--riim-teal); }
 .campus-banner { --banner-navy: var(--riim-ink); --banner-navy-mid: #26384d; --banner-teal: var(--riim-teal); }
-.campus-banner::before { background: linear-gradient(100deg, rgba(23, 37, 54, .98), rgba(23, 37, 54, .9) 48%, rgba(137, 96, 35, .62)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2200&q=85') center/cover; }
-.campus-banner::after { border-color: rgba(215, 168, 75, .24); box-shadow: 0 0 0 70px rgba(215, 168, 75, .04), 0 0 0 140px rgba(215, 168, 75, .025); }
-.riim-form-card { border: 1px solid rgba(23, 37, 54, .08); box-shadow: 0 22px 60px rgba(10, 18, 28, .24); }
-.riim-form-grid input:focus, .riim-form-grid select:focus { outline: 2px solid rgba(215, 168, 75, .35); border-color: var(--riim-teal); }
+.riim-form-card { border: 1px solid rgba(16, 42, 67, .08); box-shadow: 0 22px 60px rgba(0, 0, 0, .2); }
+.riim-form-grid input:focus, .riim-form-grid select:focus { outline: 2px solid rgba(57, 198, 178, .35); border-color: var(--riim-teal); }
 .riim-button { transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
-.riim-button-primary:hover { background: #e3b960; box-shadow: 0 8px 18px rgba(183, 121, 41, .2); }
-.riim-overview-grid article, .riim-program-grid article { box-shadow: 0 8px 24px rgba(23, 37, 54, .05); }
+.riim-button-primary:hover { background: #54d2c0; box-shadow: 0 8px 18px rgba(57, 198, 178, .2); }
+.riim-overview-grid article, .riim-program-grid article { box-shadow: 0 8px 24px rgba(16, 42, 67, .05); }
 .riim-document-grid div { background: #26384d; border-color: #26384d; min-height: 120px; padding: 24px 18px; }
 .riim-document-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .riim-document-grid span { display: block; line-height: 1.2; }
@@ -978,6 +972,7 @@ p {
   width: 100%;
   min-height: 540px;
   padding: 40px 36px;
+  transform: translateY(-32px);
 }
 
 .riim-document-grid div {
@@ -1021,6 +1016,7 @@ p {
   .riim-form-card {
     min-height: 0;
     padding: 30px 24px;
+    transform: none;
   }
 
   .riim-hero-copy {
