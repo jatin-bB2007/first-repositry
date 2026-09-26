@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Show GIBS admission page as the default homepage
+RewriteRule ^$ gibs/gibs-admissions-2027.html [L]

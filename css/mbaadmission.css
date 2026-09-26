@@ -48,8 +48,12 @@ select {
 }
 
 .container {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1480px, calc(100% - 64px));
   margin: 0 auto;
+}
+
+.mba-admissions-page .container {
+  width: min(1320px, calc(100% - 64px));
 }
 
 .section {
@@ -342,6 +346,11 @@ select {
   grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
   gap: 42px;
+}
+
+.campus-banner.mba-banner .hero-grid {
+  width: min(1320px, calc(100% - 64px));
+  margin: 0 auto;
 }
 
 .hero-copy h1 {
